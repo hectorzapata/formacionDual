@@ -23,7 +23,8 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Profesores</h4>
-                    <p class="card-subtitle mb-4"> 
+                    <a href="/profesor/create" class="btn btn-primary waves-effect waves-light mb-4 float-right">Nuevo</a>
+                    <p class="card-subtitle"> 
                         En la tabla se listan todos los profesores registrados
                     </p>
                     <div class="table-responsive">
