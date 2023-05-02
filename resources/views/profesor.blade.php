@@ -7,7 +7,10 @@
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-flex align-items-center justify-content-between">
-                <h4 class="mb-0 font-size-18">Profesores</h4>
+                <div class="d-flex align-items-center">
+                    <h4 class="mb-0 font-size-18 mr-4">Profesores</h4>
+                    <a href="/profesor/create" class="btn btn-primary waves-effect waves-light">Nuevo</a>
+                </div>
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
@@ -23,7 +26,6 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Profesores</h4>
-                    <a href="/profesor/create" class="btn btn-primary waves-effect waves-light mb-4 float-right">Nuevo</a>
                     <p class="card-subtitle"> 
                         En la tabla se listan todos los profesores registrados
                     </p>
