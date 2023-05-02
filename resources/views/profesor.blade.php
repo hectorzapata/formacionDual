@@ -1,15 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profesor</title>
-</head>
-<body>
+@extends('plantilla')
+@section('content')
     @if ( isset($mensaje) )
         <h1>{{ $mensaje }}</h1>
     @endif
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-flex align-items-center justify-content-between">
+                <h4 class="mb-0 font-size-18">Profesores</h4>
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Profesores</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>     
+    <!-- end page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Profesores</h4>
+                    <p class="card-subtitle mb-4"> 
+                        En la tabla se listan todos los profesores registrados
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table mb-0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Paterno</th>
+                                    <th>Materno</th>
+                                    <th>Teléfono</th>
+                                    <th>Titulo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($profesores as $item)
+                                    <tr>
+                                        <td>{{ $item->id }}</td>
+                                        <td>{{ $item->nombre }}</td>
+                                        <td>{{ $item->paterno }}</td>
+                                        <td>{{ $item->materno }}</td>
+                                        <td>{{ $item->telefono }}</td>
+                                        <td>{{ $item->titulo }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- end card-body-->
+            </div>
+            <!-- end card -->
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- end row -->
+
     <form action="/profesor" method="POST">
         @csrf
         <label for="">Nombre</label>
@@ -30,27 +81,4 @@
         <button type="submit">Guardar</button>
     </form>
     <br>
-    <table>
-        <thead>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Paterno</th>
-            <th>Materno</th>
-            <th>Teléfono</th>
-            <th>Titulo</th>
-        </thead>
-        <tbody>
-            @foreach ($profesores as $item)
-                <tr>
-                    <td>{{ $item->id }}</td>
-                    <td>{{ $item->nombre }}</td>
-                    <td>{{ $item->paterno }}</td>
-                    <td>{{ $item->materno }}</td>
-                    <td>{{ $item->telefono }}</td>
-                    <td>{{ $item->titulo }}</td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
-</body>
-</html>
+@endsection
