@@ -8,11 +8,12 @@
         <meta content="MyraStudio" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="/assets/images/favicon.ico">
         <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+        @yield('style')
     </head>
     <body>
         <!-- Begin page -->
@@ -36,7 +37,7 @@
                             <div class="dropdown d-inline-block ml-2">
                                 <button type="button" class="btn header-item waves-effect waves-light"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-3.jpg"
+                                    <img class="rounded-circle header-profile-user" src="/assets/images/users/avatar-3.jpg"
                                         alt="Header Avatar">
                                     <span class="d-none d-sm-inline-block ml-1">{{ \Auth::user()->name }}</span>
                                     <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
@@ -213,23 +214,24 @@
         </div>
         <!-- END layout-wrapper -->
         <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/simplebar.min.js"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/js/waves.js"></script>
+        <script src="/assets/js/simplebar.min.js"></script>
         <!-- Sparkline Js-->
         <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
         <!-- Chart Js-->
         <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
         <!-- Chart Custom Js-->
-         <script src="assets/pages/knob-chart-demo.js"></script>
+         <script src="/assets/pages/knob-chart-demo.js"></script>
         <!-- Morris Js-->
         <script src="../plugins/morris-js/morris.min.js"></script>
         <!-- Raphael Js-->
         <script src="../plugins/raphael/raphael.min.js"></script>
         <!-- Custom Js -->
-        <script src="assets/pages/dashboard-demo.js"></script>
+        <script src="/assets/pages/dashboard-demo.js"></script>
         <!-- App js -->
-        <script src="assets/js/theme.js"></script>
+        <script src="/assets/js/theme.js"></script>
+        @yield('script')
     </body>
 </html>

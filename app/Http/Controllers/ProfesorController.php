@@ -6,9 +6,12 @@ use Illuminate\Http\Request;
 use \App\Models\Profesor;
 
 class ProfesorController extends Controller{
-    public function index(){
-        $profesores = Profesor::where('activo', 1)->get();
-        return view('profesor')->with('profesores', $profesores);
+    public function index($mensaje = false){
+        $data['profesores'] = Profesor::where('activo', 1)->get();
+        if ( $mensaje ) {
+            $data['mensaje'] = $mensaje;
+        }
+        return view('profesor')->with($data);
     }
     public function store(Request $request){
         try {
@@ -18,6 +21,37 @@ class ProfesorController extends Controller{
             return view('profesor')->with( compact('profesores', 'mensaje') );
         } catch (\Throwable $th) {
             dd($th);
+        }
+    }
+    public function create(){
+        return view('profesorCreate');
+    }
+    public function destroy(Request $request){
+        try {
+            $profesor = Profesor::find($request->id);
+            $profesor->update(['activo' => 0]);
+            return array(
+            	"exito" => true,
+                "mensaje" => "Profesor eliminado con éxito"
+            );
+        } catch (\Throwable $th) {
+            return array(
+            	"exito" => false,
+                "mensaje" => "Ocurrió un error al eliminar el profesor"
+            );
+        }
+    }
+    public function edit($id){
+        $profesor = Profesor::find($id);
+        return view('profesorCreate')->with('profesor', $profesor);
+    }
+    public function update(Request $request){
+        try {
+            $profesor = Profesor::find($request->id);
+            $profesor->update($request->all());
+            return $this->index('Profesor actualizado con éxito');
+        } catch (\Throwable $th) {
+            //throw $th;
         }
     }
 }

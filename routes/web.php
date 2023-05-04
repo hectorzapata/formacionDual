@@ -28,6 +28,10 @@ Route::prefix('/profesor')->group(function () {
     //Todo lo que esté aquí, va a agregar "/profesor" al principo
     Route::get('/', [ProfesorController::class, 'index']);
     Route::post('/', [ProfesorController::class, 'store']);
+    Route::get('/create', [ProfesorController::class, 'create']);
+    Route::get('/{id}/edit', [ProfesorController::class, 'edit']);
+    Route::put('/', [ProfesorController::class, 'update']);
+    Route::delete('/', [ProfesorController::class, 'destroy']);
 })->middleware(['auth', 'verified']);
 
 Route::prefix('/materia')->group(function () {

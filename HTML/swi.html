@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+    </style>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Encode Sans', sans-serif;
+        }
+        .menu img {
+            height: 40px;
+        }
+        .menu {
+            display: flex;
+            padding: 20px 160px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            position: relative;
+        }
+        .menu ul li {
+            list-style: none;
+            padding: 10px;
+            position: relative;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+        .menu ul li ul{
+            position: absolute;
+            opacity: 0;
+            flex-direction: column;
+            top: 100%;
+            left: 0;
+            background: white;
+        }
+        ul.toLeft{
+            top: 0 !important;
+            left: calc(100% + 3px) !important;
+        }
+        .menu ul li:hover > ul {
+            opacity: 1;
+            transform: none;
+            visibility: visible;
+        }
+        .menu ul li:after {
+            content: "";
+            position: absolute;
+            background: black;
+            height: 2px;
+            width: 0;
+            bottom: 0;
+            transition: all .45s;
+            left: auto;
+            right: 0;
+        }
+        .menu ul li:hover:after {
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+        .banner {
+            /* background: red; */
+            height: 500px;
+            background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Header-Unime_2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+        }
+        .contenedor {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        a.botonFlotante {
+            text-decoration: none;
+            background: #00e676;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            color: white;
+            font-weight: 600;
+            position: fixed;
+            box-shadow: 0 0 10px -5px black;
+            right: 10px;
+            bottom: 10px;
+            z-index: 1;
+        }
+        .iconos .icono {
+            height: 200px;
+            flex-grow: 1;
+            max-width: 200px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            transition: all .45s;
+        }
+        .iconos .contenedor {align-items: center;}
+        .iconos .icono:before {
+            content: 'Aquí va el texto';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            opacity: 0;
+            transition: all .45s;
+        }
+        .iconos .icono:hover {
+            background-blend-mode: difference;
+            background-color: white;
+        }
+        .iconos .icono:hover:before {
+            opacity: 1;
+        }
+        .contador .contenedor p {
+            font-size: 200px;
+            margin: 0;
+            color: white;
+        }
+
+        .contador {
+            background: red;
+            padding: 80px;
+            position: relative;
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contador:before, .contador:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            background-color: #ffffff;
+            left: 0;
+            bottom: -40px;
+        }
+
+        .contador:before {
+            top: -40px;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+        }
+
+        .contador::after {
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+        }
+
+        .contador .contenedor {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <a class="botonFlotante" href="javascript:void(0);">
+        Ver video
+        <span class="material-symbols-outlined">phone_iphone</span>
+    </a>
+    <div class="menu">
+        <img src="https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/unnamed%28copia%2914.png">
+        <ul> 
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/d1puVnNnTGQ1bHJDSkZuVzZMV0c5Zz09">UNIME</a>
+                <ul>
+                    <li><a href="">UNIME</a></li>
+                    <li><a href="">Historia</a></li>
+                    <li><a href="">Misión y visión</a></li>
+                    <li><a href="">Valores UNIME</a></li>
+                    <li><a href="">Modelo Educativo</a></li>
+                    <li><a href="">Tutoría en línea</a></li>
+                    <li><a href="">Centros de Atención UNIME</a></li>
+                    <li><a href="">Biografías de Emprendendores</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/bllLSEh2Tk9XYnlOakcwOXBSSWxlQT09">Historia</a>
+                <ul>
+                    <li>
+                        <a href="">Licenciaturas</a>
+                        <ul class="toLeft">
+                            <li><a href="">Negocios internacionales</a></li>
+                            <li><a href="">Comunicación y Medios Digitales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Posgrados</a></li>
+                    <li><a href="">Centro de Excelencia</a></li>
+                    <li><a href="">Centro de Certificación</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/OWh1R1hLckpHc1NzaDNnektFby8rUT09">Misión y visión</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/aElOYXk2TVBEQW9vUXNWb0oxYzJuQT09">Valores</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/M3JPcXdBczdKVzZDV29FTlVMM2srZz09">Modelo Educativo</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/Z01ndkJqcjdkQkRpMmV2WDZvcHZUZz09">Tutorías en línea</a>
+            </li>
+        </ul>
+    </div>
+    <a class="banner" href="https://www.instagram.com/redesunime" target="_blank"></a>
+    <div class="iconos">
+        <div class="contenedor">
+            <div class="icono" style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2017%28copia%291.png');"></div>
+            <div class="icono" style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2017%28copia%291.png');"></div>
+            <div class="icono" style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2017%28copia%291.png');"></div>
+            <div class="icono" style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2017%28copia%291.png');"></div>
+        </div>
+    </div>
+    <div class="contador">
+        <div class="contenedor">
+            <p>123456</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.preguntasFrecuentes .preguntas .pregunta').on('click', function (event) {
+                $('.preguntasFrecuentes .preguntas .respuesta').hide();
+                $( event.currentTarget ).next().fadeIn();
+            });
+            $('#prueba').click(function (e) { 
+                e.preventDefault();
+                $('.modal').toggleClass('visible');
+            });
+            $('#cerrarModal').click(function (e) { 
+                e.preventDefault();
+                $('.modal').toggleClass('visible');
+            });
+        });
+    </script>
+</body>
+</html>
