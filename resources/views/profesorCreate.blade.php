@@ -28,7 +28,7 @@
                     <p class="card-subtitle"> 
                         Llena los campos solicitados
                     </p>
-                    <form action="/profesor" method="POST">
+                    <form action="/profesor" method="POST" enctype="multipart/form-data">
                         @csrf
                         @isset($profesor)
                             <input type="hidden" name="_method" value="PUT">
@@ -63,6 +63,19 @@
                                 <div class="form-group">
                                     <label for="">Titulo</label>
                                     <input class="form-control" type="text" name="titulo" value="{{ isset($profesor) && $profesor->titulo ? $profesor->titulo : '' }}">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="">CV</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="file" name="cv">
+                                        @if ( isset($profesor) && !is_null($profesor->cv) )
+                                        <div class="input-group-append">
+                                                <a class="btn btn-dark waves-effect waves-light" href="/storage/{{ $profesor->cv }}" target="_blank">Ver CV</a>
+                                            </div>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
                         </div>

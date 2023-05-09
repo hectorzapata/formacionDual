@@ -12,6 +12,7 @@ class Profesor extends Model{
         'materno',
         'telefono',
         'titulo',
+        'cv',
         'activo'
     ];
 }

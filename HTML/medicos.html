@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Encode Sans', sans-serif;
+        }
+        .contenedor {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+        /* Base */
+        header {
+        }
+        header .contenedor .menu {
+            list-style: none;
+            display: flex;
+        }
+        .slider .slide {
+            width: 100%;
+            display: flex;
+            height: 400px;
+        }
+        .slider .izq {
+            flex-grow: 0;
+            flex-shrink: 1;
+            /* background: red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: white;
+            padding: 0 30px;
+        }
+        .slider .der {
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 40%;
+            /* background: blue; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .izq h1 {
+    margin: 0;
+    font-size: 31pt;
+    margin: 0;
+}
+
+.izq p {
+    margin: 0;
+    font-size: 16pt;
+}
+
+.izq a {
+    background: white;
+    color: red;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 10pt;
+    font-weight: 600;
+    text-decoration: none;
+}
+.circulo {
+    height: 350px;
+    width: 350px;
+    background: white;
+    border-radius: 50%;
+    border: 25px solid white;
+    background-image: url('https://previews.123rf.com/images/tupungato/tupungato1412/tupungato141200095/34336610-seamless-pattern-with-healthcare-medicine-and-pharmacy-icons-and-symbols-medical-background-doodle.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.persona {
+    width: 350px;
+    height: 400px;
+    /* background-color: red; */
+    background-image: url('https://www.nicepng.com/png/full/340-3400291_smiling-person-png-man-with-arms-crossed-png.png');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -25px;
+    right: 0;
+    top: -46px;
+    bottom: 0;
+}
+section.slider {
+    background: #1380ed;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li>Home</li>
+                <li>Doctor</li>
+                <li>Services</li>
+                <li>Review</li>
+            </ul>
+            <div class="botonContacto"></div>
+        </div>
+    </header>
+    <section>
+
+    </section>
+    <section class="slider">
+        <div class="contenedor swiper" id="slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide swiper-slide">
+                        <div class="izq">
+                            <h1>Providing Community Access To Quality Healtcare</h1>
+                            <p>The Quality of our service and the proffesionalism of our staff are the reason for trustlife center's success</p>
+                            <a href="">Get started</a>
+                        </div>
+                        <div class="der">
+                            <div class="circulo">
+                                <div class="persona"></div>
+                                <div class="personaBottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide swiper-slide">
+                        <div class="izq">
+                            <h1>Providing Community Access To Quality Healtcare</h1>
+                            <p>The Quality of our service and the proffesionalism of our staff are the reason for trustlife center's success</p>
+                            <a href="">Get started</a>
+                        </div>
+                        <div class="der">
+                            <div class="circulo">
+                                <div class="persona"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide swiper-slide">
+                        <div class="izq">
+                            <h1>Providing Community Access To Quality Healtcare</h1>
+                            <p>The Quality of our service and the proffesionalism of our staff are the reason for trustlife center's success</p>
+                            <a href="">Get started</a>
+                        </div>
+                        <div class="der">
+                            <div class="circulo">
+                                <div class="persona"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const swiper = new Swiper('#slider', {
+                direction: 'horizontal',
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                }
+            });
+        });
+    </script>
+</body>
+</html>

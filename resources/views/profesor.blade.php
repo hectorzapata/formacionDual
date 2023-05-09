@@ -62,6 +62,9 @@
                                                 <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
                                                     <a class="dropdown-item waves-effect waves-light" href="/profesor/{{ $item->id }}/edit">Editar</a>
                                                     <a class="dropdown-item waves-effect waves-light" href="javascript:void(0);" onclick="setCurrent({{ $item->id }}, this)" data-toggle="modal" data-target="#exampleModal">Eliminar</a>
+                                                    @if ( !is_null($item->cv) )
+                                                        <a class="dropdown-item waves-effect waves-light" href="/storage/{{ $item->cv }}">Ver CV</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </td>

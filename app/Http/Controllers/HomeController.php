@@ -5,22 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Models\Profesor;
 
-class ProfesorController extends Controller{
-    public function index($mensaje = false){
-        $data['profesores'] = Profesor::where('activo', 1)->get();
-        if ( $mensaje ) {
-            $data['mensaje'] = $mensaje;
-        }
-        return view('profesor')->with($data);
+class HomeController extends Controller{
+    public function index(){
+        $data = [
+            "totalProfesores" => 20
+        ];
+        $data["profesoresRegistrados"] = Profesor::where('activo', 1)->count();
+        return view('dashboard')->with($data);
     }
     public function store(Request $request){
         try {
             $profesor = Profesor::create( $request->all() );
-            if ( $request->cv ) {
-                $ruta = \Storage::disk('public')->put('', $request->cv);
-                $profesor->cv = $ruta;
-                $profesor->save();
-            }
             $profesores = Profesor::where('activo', 1)->get();
             $mensaje = 'Profesor registrado con éxito';
             return view('profesor')->with( compact('profesores', 'mensaje') );
@@ -54,11 +49,6 @@ class ProfesorController extends Controller{
         try {
             $profesor = Profesor::find($request->id);
             $profesor->update($request->all());
-            if ( $request->cv ) {
-                $ruta = \Storage::disk('public')->put('', $request->cv);
-                $profesor->cv = $ruta;
-                $profesor->save();
-            }
             return $this->index('Profesor actualizado con éxito');
         } catch (\Throwable $th) {
             //throw $th;
