@@ -60,6 +60,7 @@
                                                     Acciones <i class="mdi mdi-chevron-down"></i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                                                    <a class="dropdown-item waves-effect waves-light" href="/profesor/{{ $item->id }}/gafete">Gafete</a>
                                                     <a class="dropdown-item waves-effect waves-light" href="/profesor/{{ $item->id }}/edit">Editar</a>
                                                     <a class="dropdown-item waves-effect waves-light" href="javascript:void(0);" onclick="setCurrent({{ $item->id }}, this)" data-toggle="modal" data-target="#exampleModal">Eliminar</a>
                                                     @if ( !is_null($item->cv) )

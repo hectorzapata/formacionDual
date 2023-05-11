@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Models\Profesor;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ProfesorController extends Controller{
     public function index($mensaje = false){
@@ -62,6 +63,17 @@ class ProfesorController extends Controller{
             return $this->index('Profesor actualizado con éxito');
         } catch (\Throwable $th) {
             //throw $th;
+        }
+    }
+    public function gafete($id){
+        try {
+            $profesor = Profesor::find($id);
+            // return view('gafete')->with('profesor', $profesor);
+            $pdf = Pdf::loadView('gafete', ["profesor" => $profesor]);
+            return $pdf->stream('gafete.pdf');
+            dd($profesor);
+        } catch (\Throwable $th) {
+            dd($th);
         }
     }
 }
