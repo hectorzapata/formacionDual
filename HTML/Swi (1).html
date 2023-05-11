@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a79ca150de.js" crossorigin="anonymous"></script>
+    <style>
+        .card {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1366px;
+        }
+
+        .card>div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 75%;
+            margin: 0 auto;
+            max-width: 1000px;
+
+
+        }
+
+        .card .img {
+            background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/SWi-Card_3.jpg);
+            height: 400px;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card .txt {
+            width: 50%;
+        }
+
+        .card .txt p {
+            font-family: Avenir-cm-bold, sans-serif;
+            color: rgb(55, 73, 87);
+        }
+
+        .card .txt p span {
+            font-weight: bold;
+        }
+
+        .card .txt a {
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(55, 73, 87);
+            border: 0px solid rgb(51, 51, 51);
+            text-decoration: none;
+            padding: 12px 20px;
+            font-family: null, sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+             transition: ease all .5s;
+        }
+
+        .card .txt a:hover {
+            padding: 12px 30px;
+           
+        }
+
+        .imgs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1366px;
+
+        }
+
+        .imgs>a {
+            height: 120px;
+            width: 120px;
+            justify-content: space-between;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 20px 3%;
+
+        }
+
+        .crea {
+            background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Dudes.png);
+
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1366px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 50px 0;
+        }
+
+        .crea .txt {
+            width: 75%;
+            margin: 0 auto;
+            max-width: 1000px;
+            text-align: center;
+            height: 380px;
+
+        }
+
+        .crea .txt p {
+            color: #fff;
+            font-family: Avenir-cm;
+        }
+
+        .crea .txt p.parr {
+            text-align: justify;
+
+            font-size: 16pt;
+            font-weight: 600;
+
+        }
+
+        .crea .txt p.tit {
+            font-size: 50px;
+            letter-spacing: 5px;
+            font-weight: 900;
+
+        }
+
+        .crea .txt .parr a {
+            font-size: 21.3333px;
+            color: rgb(222, 163, 0);
+            text-decoration: none;
+            font-family: Avenir-cm, sans-serif;
+        }
+
+        .alexa .cont {
+            width: 75%;
+            margin: 0 auto;
+            max-width: 1000px;
+            display: flex;
+            align-items: center;
+            padding: 100px 0 !important;
+        }
+
+        .alexa .cont .img {
+            background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Alexa_SWi%28copia%291.jpg);
+            display: flex;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 580px;
+            height: 500px;
+            margin-left: 20px !important;
+        }
+
+        .alexa .cont .txt {
+
+            width: 400px;
+        }
+
+        .alexa .cont .txt p {
+            text-align: justify;
+            color: rgb(55, 73, 87);
+            font-family: Avenir-cm-bold, sans-serif;
+        }
+
+        .alexa .cont .txt p.tit {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .alexa .cont .txt span {
+            font-weight: bold;
+        }
+
+        .lg p.tit {
+            font-size: 30pt;
+            font-family: "ITC Franklin Gothic LT", sans-serif;
+            text-align: center;
+
+            letter-spacing: 2px;
+        }
+
+        .lg a.bs {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(55, 73, 87);
+            border: 0px solid rgb(255, 255, 255);
+            border-radius: 14px;
+            font-family: "ITC Franklin Gothic LT", sans-serif;
+            text-decoration: none;
+            padding: 7px 20px;
+
+        }
+
+        .lg .lnk {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .preguntas {
+            width: 75%;
+            margin: 0 auto;
+            max-width: 1000px;
+            padding: 20px 0 !important;
+
+        }
+
+        .preguntas .pr {
+            padding: 10px !important;
+            font-size: 20px;
+            color: #121618;
+            box-shadow: 0 3px 10px 0 rgba(18, 22, 24, 0.2);
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .preguntas .rs {
+            text-align: justify;
+            font-family: "ITC Franklin Gothic LT", sans-serif;
+            display: none;
+        }
+
+        .accesos .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .accesos .container>div {
+            display: flex;
+            flex-direction: column;
+            min-width: 180px;
+            max-width: 220px;
+            margin: 10px !important;
+        }
+
+        .accesos .container>div a {
+            position: relative;
+            margin-bottom: 5px !important;
+            text-decoration: none;
+            font-size: 12px;
+            color: rgb(18, 22, 24);
+            background-color: rgba(0, 0, 0, 0);
+            border: 0px solid rgb(18, 22, 24);
+            border-radius: 0px;
+            font-family: Avenir-cm, sans-serif;
+        }
+
+        .accesos .container>div a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #121618;
+            transition: ease all .5s;
+        }
+
+        .accesos .container>div a:hover::after {
+
+            width: 100%;
+        }
+
+        .accesos .container>div p {
+            color: rgb(222, 163, 0);
+            font-family: Avenir-cm;
+            margin: 0;
+            padding-bottom: 5px;
+            text-align: left;
+            font-weight: 900;
+            font-size: 12px;
+        }
+
+        footer {
+            background-color: rgb(37, 55, 70);
+            position: relative;
+            height: 230px;
+            width: 100%;
+            float: inherit !important;
+        }
+
+        footer .container {
+            display: flex;
+            width: 75%;
+            padding: 20px 0 !important;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1900px
+        }
+
+        footer .container .izq {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            justify-content: center;
+        }
+
+        footer .container .izq .logo {
+
+            background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/logofooter%28copia%293.png);
+            width: 120px;
+            height: 50px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+     
+        footer .container .izq .redes a {
+            margin: 3px !important;
+    padding: 5px !important;
+        }
+        footer .container .izq .redes a i {
+            text-decoration: none;
+            color: white;
+        }
+        footer .container .centro{
+            width: 75%;
+    margin: 0 auto;
+    max-width: 1900px;
+        }
+        footer .container .centro p{
+            font-size: 11pt;
+    font-family: Avenir-cm, sans-serif;
+    color: white;
+        }
+        footer .container .der {
+            display: flex;
+            flex-direction: column;
+        }
+        footer .container .der a{
+            font-size: 14px;
+    color: rgb(36, 54, 69);
+    background-color: rgb(255, 255, 255);
+    border: 0px solid rgb(147, 12, 33);
+    border-radius: 10px;
+    font-family: Avenir-cm-bold, sans-serif;
+    padding: 7px 10px !important;
+    margin-top: 5px !important;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: none;
+
+        }
+        footer .container .der p{
+            font-size: 12px;
+    text-align: center;
+    color: #fff;
+        }
+        .btntg {
+
+            background-color: rgb(222, 163, 0);
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            box-shadow: 0 0 10px 0 rgba(18, 22, 24, 0.2);
+            box-sizing: border-box;
+        }
+
+        .btntg a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+      
+        header .container{
+            width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+        }
+        header .container >a{
+            background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/logo-swi-menu-2-.png);
+            background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 60px;
+        }
+        header .container ul{
+            
+            display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: flex-end;
+             align-content: center;
+
+        }
+        header .container ul li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+        }
+header .container ul li a{
+    font-family: undefined, sans-serif;
+    font-size: 14px;
+    color: rgb(19, 30, 41);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+header .container ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: ease all .5s;
+
+}
+header .container ul li a:hover::after{
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+.banner{
+    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Portada_SWi_6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.banner .container{
+        width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 100px 0!important;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+align-items: center;
+position: relative;
+
+}
+.banner .container .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: calc(100% - 370px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.banner .container .txt p{
+    margin: 0 auto!important;
+    font-size: 35pt;
+    font-family: Avenir-cm-bold, sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 1px 1px #858585;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+div.ha{
+    display: flex;
+    justify-content: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0 !important
+}
+
+
+div.ha a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 73, 87);
+    border: 15.9844px solid rgb(55, 73, 87);
+    border-radius: 18px;
+    font-family: null, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    
+    letter-spacing: 2px;
+}
+section.edtx .container{
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    padding: 20px 0  !important;
+    
+}
+section.edtx .container .img{
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 230px;
+    height: 150px;
+    margin: 10px !important;
+    padding: 20px 0 !important;
+  justify-content: center;
+  align-items: center;
+}
+section.edtx .container .img:hover{
+    background-blend-mode: soft-light;
+}
+
+section.edtx .container .img p{
+    font-family: "ITC Franklin Gothic LT", sans-serif;
+  
+    width: 90%;
+    margin: 0 auto !important;
+    color: rgb(37, 55, 70);
+    text-align: center;
+    opacity: 0;
+    transition: ease all 1s;
+    font-size: 20px;
+}
+section.edtx  .container .img:hover p{
+    opacity: 1;
+}
+div.solucion{
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0 !important;
+}
+div.solucion p{
+    font-family: "ITC Franklin Gothic LT", sans-serif;
+    color: rgb(37, 55, 70);
+    width: 100%;
+    margin: 0 auto !important;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+section.curva{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 20px 0 !important;
+    display: flex; 
+    overflow: hidden;
+}
+section.curva .container{
+    background-color: rgb(37, 55, 70);
+    font-family: "ITC Franklin Gothic LT", sans-serif;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1366px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+section.curva .container .txt{
+    padding: 60px 0 !important;
+    width: 59%;
+    font-size: 5vmin;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+section.curva .container .txt p{
+    margin: 0;
+}
+section.curva .container .arr{
+    background-color: #fff;
+    position: absolute;
+    width: 200%;
+    height: 800px;
+    right: -50%;
+    left: -50%;
+    box-shadow: inset 0 0 10px;
+    top: -745px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+section.curva .container .ab{
+    background-color: #fff;
+    position: absolute;
+    width: 200%;
+    height: 800px;
+    right: -50%;
+    left: -50%;
+    box-shadow: inset 0 0 10px;
+    bottom: -745px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+}
+section.cnt{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+section.cnt .container p{
+    padding-bottom: 10px !important;
+    font-size: 40px;
+    font-weight: 900;
+    color: #121618;
+
+}
+section.cnt .container{
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.cnt .container .img{
+    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Men.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 450px;
+}
+div.ms{
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0 !important;
+    display: flex;
+    justify-content: center;
+    
+}
+div.ms a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 73, 87);
+    border: 8px solid rgb(55, 73, 87);
+    border-radius: 18px;
+    font-family: null, sans-serif;
+
+}
+
+ div.tit{
+    display: flex;
+    justify-content: center;
+    font-size: 34pt;
+    font-family: "ITC Franklin Gothic LT", sans-serif;
+
+}
+section.mig .container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+section.mig .container .cn .img{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+
+}
+section.mig .container .cn .txt{
+    padding: 10px 0!important;
+}
+section.mig .container .cn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 200px;
+    margin: 10px!important;
+}
+section.mig{
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0!important;
+}
+section.compra{
+    background-color: rgb(55, 73, 87);
+    display: flex;
+    margin: 40px;
+    width: 90%;
+
+}
+section.compra .txt{
+    padding: 20px;
+    font-family: sans-serif;
+    width: calc(100% - 390px);
+    text-align: justify;
+}
+section.compra .img{
+    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/SWi-Card_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    min-height: 420px;
+    margin-right: 40px !important;
+    transform: scaleY(1.1);
+    box-shadow: 3px 3px 5px 0 rgba(18,22,24,0.5);
+
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a></a>
+            <div class="menu">
+                <ul>
+                 <li>
+                       <a href="">Crea tu SWi</a>
+                 </li>
+                   <li>
+                     <a href="">SWi Vitrina</a>
+                   </li>
+                   <li>
+                     <a href="">SWi Comunidad</a>
+                   </li>
+                   <li>
+                     <a href="">SWi News</a>
+                   </li>
+                    <li>
+                        <a href="">Información</a>
+                    </li>
+                    <li>
+                        <a>Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div></header>
+    <section class="banner">
+        <div class="container">
+            <div class="txt">
+                <p>TECNOLOGÍA QUE TRANSFORMA TU VIDA</p></div>
+        </div>
+    </section>
+   <div class="ha">
+    
+   <a href="">Crea tu SWi Sitio Web Inteligente Gratis de por Vida</a>
+     
+   </div>
+   <section class="edtx">
+    <div class="container">
+        <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2017%28copia%291.png);">
+        <p>Incrementa tu ingresos</p>
+        </div>
+        <div class="img" style="background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2019%28copia%291.png);">
+        <p>Administra tu vida y tus negocios</p>
+        </div>
+        <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2018%28copia%291.png);">
+        <p>Crea tus tiendas digitales</p>
+        </div>
+        <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Capa%2020%28copia%291.png);">
+        <p>Compra más barato y seguro</p>
+        </div>
+    </div>
+   </section>
+ <div class="solucion">
+      <p>SOLUCIONES EN LA PALMA DE TU MANO</p>
+ </div>
+ <section class="curva">
+    <div class="container">
+        <div class="arr"></div>
+        <div class="ab"></div>
+        <div class="txt">
+            <p>YA SON</p>
+            <p style="font-size: 20vmin;font-weight: 900;">842,524</p>
+            <p style="font-size: 28pt;">PERSONAS CON SWi</p>
+            <p style="font-size: 18pt;">INTEGRADAS A LA TRANSFORMACIÓN DIGITAL</p>
+        </div>
+    </div>
+ </section>
+ <section class="cnt">
+ <div class="container">
+       <p>Conecta tu vida y hazla más sencilla</p>
+       <div class="img"></div>
+ </div>
+ <div class="ms">
+    <a>Crea tu SWi gratis ahora</a>
+ </div>
+ </section>
+ <div class="tit" >
+    <p>UN MUNDO DE SOLUCIONES CON SWi</p>
+</div >
+ <section class="mig">
+  <div class="container">
+ <div class="cn">
+    <div class="img" style="background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Asistente%20Virtual%20Inteligente.png);"></div>
+    <div class="txt">Asistente Virtual Inteligente
+    </div></div>
+ <div class="cn">
+    <div class="img" style="background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Formularios%28copia%292.png);"></div>
+    <div class="txt">Tiendas Digitales</div></div>
+ <div class="cn">
+    <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Planes%20de%20Trabajo.png);"></div>
+    <div class="txt">Planes de Trabajo</div></div>
+ <div class="cn">
+    <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Formularios%28copia%292.png);"></div>
+    <div class="txt">Formularios</div></div>
+ <div class="cn">
+    <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Contabilidad_1.png);"></div>
+    <div class="txt">Contabilidad</div></div>
+ <div class="cn">
+    <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Micrositios%28copia%291.png);"></div>
+    <div class="txt">Micrositios</div></div>
+ <div class="cn">
+    <div class="img" style="     background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Cajero%20Inteligente_2.png);"></div>
+    <div class="txt">Cajero Inteligente</div></div>
+    <div class="cn">
+        <div class="img" style="     background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Punto%20de%20Venta.png);"></div>
+        <div class="txt">Punto de Venta</div></div>
+ <div class="cn">
+    <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Ventas%20y%20Facturacio%CC%81n.png);"></div>
+    <div class="txt">Ventas y Facturación</div></div>
+ <div class="cn">
+    <div class="img" style="background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Centros%20Comerciales%28copia%292.png);"></div>
+    <div class="txt">Centros Comerciales</div></div>
+ <div class="cn">
+    <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Procesos%28copia%291.png);"></div>
+    <div class="txt">Procesos</div></div>
+ 
+ <div class="cn">
+    <div class="img" style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Chat%20SWi.png);"></div>
+    <div class="txt">
+        SWi Chat</div></div>
+  </div>
+ </section>
+ <section class="compra">
+    <div class="txt">
+        <p style="    font-size: 30pt;color: white;text-align: initial;">Compra directo al fabricante desde tu SWi</p>
+        <p style="    font-size: 14pt;color: white;">En SWI todo es más barato, hay más de 300 grandes empresas y gobiernos conectados a SWi para ofrecer sus servicios y productos a los mejores precios, con entrega rápida y simplificada. <br><br>
+
+            Cada vez es más fácil comprar, pagar, controlar tus inventarios y administrar todo desde un mismo lugar. <br><br>
+            
+            Crea gratis tu SWi y explóralo, tiene miles de funciones. ¡Es fantástico y es tuyo para toda la vida!</p>
+    </div>
+    <div class="img"></div>
+ </section>
+        <div class="btntg">
+        <a href="https://t.me/SWiTecnologias_bot">
+            SWi Telegram
+            <i class="fab fa-telegram-plane"></i></a>
+    </div>
+    <section class="card">
+        <div class="container">
+            <div class="img">
+            </div>
+            <div class="txt">
+                <p
+                    style="color: rgb(55, 73, 87);font-family: Avenir-cm-bold, sans-serif;font-size: 30px;font-weight: 600;">
+                    <span style="font-weight: normal;font-family: Avenir-cm-bold, sans-serif;">Paga todo fácil, rápido y
+                        seguro con</span>
+                    <span style="font-family: Avenir-cm-bold, sans-serif;"> SWi Card</span>
+                </p>
+                <p>
+                    Al crear tu <span class="bld"> SWi</span> obtienes <span class="bld"> SWi Card</span>
+                    automáticamente, una tarjeta de débito digital a la que puedes depositar fácilmente para comprar y
+                    pagar todo lo que
+                    quieras en <span class="bld"> SWi</span>, solo tienes que seguir las instrucciones para
+                    depositar.<br><br>
+
+                    Puedes convertir tu <span class="bld"> SWi Card</span> en tarjeta de crédito para utilizarlo cuando
+                    lo requieras en <span class="bld"> SWi</span>, solicita tu línea ahí mismo.<br><br>
+
+                    Factura todos tus depósitos en <span class="bld"> SWi Card</span> al instante.<br><br>
+                </p>
+                <a href="">IR A SWI CARD</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg">
+        <p class="tit">EMPRESAS SOCIAS DE SWi</p>
+        <div class="imgs">
+            <a class="img6" target="_blank" href="https://www.telcel.com/"
+                style="background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20telcel.png);"></a>
+
+            <a class="img2" target="_blank" href="https://www.google.com/"
+                style="background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20Google.png);"></a>
+            <a class="img3" target="_blank" href="https://www.visa.com.mx/"
+                style="background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20Visa.png);"></a>
+            <a class="img4" target="_blank" href="https://www.bibliotechnia.com.mx/"
+                style="    background-image: url(https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20DHL.png)"></a>
+
+
+        </div>
+        <div class="lnk">
+            <a href="" class="bs">Conoce más socios SWi</a>
+        </div>
+    </section>
+    <section class="crea">
+        <div class="txt">
+            <p class="tit">¡Crea tu propio SWi!</p>
+            <p class="parr">
+                SWi es mucho más que un Sitio Web, es tu espacio privado en internet desde donde puedes controlar y
+                realizar casi todo, desde el primer día se convertirá en tu comunidad, tu hogar, tu oficina,
+                tu centro de trabajo, tu centro de entretenimiento, tu centro educativo, tu centro de compras, tu centro
+                de ventas, tu centro de negocios, tu centro de comunicación, tu centro de integración,
+                tu centro de salud, tu centro de operaciones, tu centro de conexiones, tu centro de diversión, tu centro
+                de cobros, tu centro de pagos, tu centro de control, tu centro de inteligencia, tu centro de seguridad y
+                mucho más.
+            </p>
+            <p class="parr">
+                Crea tu SWi gratis de por vida
+                <a href="">dando clic aquí</a>
+            </p>
+        </div>
+    </section>
+    <section class="alexa">
+        <div class="cont">
+
+            <div class="txt">
+                <p class="tit">
+                    Alexa <span style="font-weight: normal;">en</span> SWi
+                </p>
+                <p class="parr">
+                    En breve podrás utilizar Alexa en tu <span class="bld"> SWi</span>. Con esta maravillosa integración
+                    lograrás que los usuarios de tu <span class="bld"> SWi</span> se comuniquen por voz y realicen
+                    diversos procesos para localizar y obtener información de tus servicios y productos, cotizar,
+                    comprar, facturar sus compras, solicitar la entrega, pagar y mucho más… <br><br>
+
+                    Y lo más interesante, tu mismo podrás utilizar <span class="bld"> Alexa</span> desde tu <span
+                        class="bld"> SWi</span> para cientos de operaciones como comprar y pagar productos por internet,
+                    controlar tus dispositivos, comunicarte con otras personas,
+                    enviar dinero, hacer citas, organizar reuniones, enviar recordatorios, pedir información en tu <span
+                        class="bld"> SWi</span> o en Internet, entre muchas otras cosas...
+                </p>
+            </div>
+            <div class="img"></div>
+        </div>
+
+    </section>
+    <section class="preguntas">
+        <div class="pr">¿Qué es SWi?</div>
+        <div class="rs">SWi o Sitio Web Inteligente es mucho más que un Sitio Web, es tu espacio privado en internet
+            desde donde puedes controlar y realizar casi todo, desde el primer día se convertirá en tu hogar, tu
+            oficina, tu centro de trabajo, tu centro de entretenimiento, tu centro educativo, tu centro de compras, tu
+            centro de ventas, tu centro de negocios, tu centro de comunicación, tu centro de integración, tu centro de
+            salud, tu centro de operaciones, tu centro de conexiones, tu centro de diversión, tu centro de cobros, tu
+            centro de pagos, tu centro de control, tu centro de inteligencia, tu centro de seguridad y mucho más.</div>
+        <div class="pr">¿Qué beneficio obtengo al crear mi SWi?</div>
+        <div class="rs">SWi tiene muchas funciones y te puede servir de muchas maneras, por ejemplo para comprar más
+            barato y seguro gran parte de los productos y servicios que utilizas en tu vida diaria, puedes crear tiendas
+            digitales e incorporarlas a centros comerciales fácilmente para vender lo que quieras, con SWi tienes tu
+            propio Cajero Inteligente en línea con el que puedes cobrar fácil y rápido cualquier cantidad o utilizarla
+            para que te transfieran o depositen de muchas formas, cuentas con cientos de Apps para organizar y controlar
+            tus actividades, te permite crear y publicar todas las páginas informativas que quieras sin ningún costo,
+            puedes encontrar muchos productos gratuitos como imágenes, videos, música, libros, entre otros. Asimismo,
+            SWi te conecta con empresas, organizaciones y gobiernos para realizar múltiples trámites, te ofrece cuentas
+            de correo con tus dominios, calendarios, control de inventarios, contabilidad, almacenamiento, en la nube y
+            miles de opciones más para que desde un solo lugar controles todo.</div>
+        <div class="pr">¿Cómo creo mi SWi? </div>
+        <div class="rs">Crear tu SWi o Sitio Web Inteligente es muy sencillo y no tiene costo, debes darclic aquí y
+            seguir los pasos que se te indican.</div>
+        <div class="pr">¿Me puedo integrar a SWi Comunidad?</div>
+        <div class="rs">Claro, para integrarte a SWi Comunidad debes ingresar a tu SWi Sitio Web Inteligente y buscar la
+            zona SWi Comunidad en la barra superior y si no tienes SWi puedes crearte rápidamente el tuyo gratuito de
+            por vida, desde donde además de integrarte a SWi Comunidad tendrás un mundo fantástico de opciones para
+            hacer miles de cosas como jugar, entretenerte, acceder a cientos de servicios, comprar todo más barato,
+            crear tus tiendas digitales desde donde podrás vender y cobrar de forma sencilla, entre miles de opciones.
+        </div>
+        <div class="pr">¿Qué beneficio obtengo al ingresar a SWi Comunidad?</div>
+        <div class="rs">Conocer nuevas personas y hacer nuevos amigos con los que podrás interactuar de forma sencilla y
+            rápida para divertirte, compartir experiencias, hacer negocios, realizar todo tipo de alianzas y operaciones
+            de forma segura. <br><br>
+
+            SWi Comunidad es una comunidad muy segura, ya que todos los usuarios son personas identificadas (no cuentas
+            de correo), de manera que tienes la certeza de que son personas reales y te darás cuenta de que son afines a
+            ti más de lo que te imaginas.</div>
+    </section>
+
+    <section class="accesos">
+        <div class="container">
+            <div class="link1">
+                <p>ZONAS SWi</p>
+                <a href="https://comunidad.swi.mx/">SWi Comunidad</a>
+                <a href="">SWi Personalizado</a>
+                <a href="">SWi Apps</a>
+                <a href="">SWi News</a>
+                <a href="">SWi Tv News</a>
+                <a href="">SWi Negocios</a>
+                <a href="">SWi Market</a>
+                <a href="">SWi Remates</a>
+                <a href="">SWi Videoteca</a>
+                <a href="">SWi Salud y Felicidad</a>
+                <a href="">SWi Vida y Estilo</a>
+                <a href="">SWi Empleo</a>
+                <a href="">UNIME</a>
+                <a href="">SWi Educación</a>
+                <a href="">SWi Entretenimiento</a>
+                <a href="">SWi Sports</a>
+                <a href="">SWi Vitrina</a>
+                <a href="">SWi Soporte</a>
+                <a href="">Mi perfil</a>
+                <a href="">SWi Notificaciones</a>
+            </div>
+            <div class="link2">
+                <p>TECNOLOGÍA Y CONECTIVIDAD</p>
+                <a href="">Más de 400,000 SWis operando...</a>
+                <a href="">Más de 600 conexiones...</a>
+                <a href="">Más de 100 aplicaciones SWi...</a>
+                <a href="">SWi Workmail</a>
+                <a href="">SWi Alexa</a>
+                <a href="">SWi Telegram</a>
+                <a href="">SWi Cajero Inteligente</a>
+                <a href="">SWi Card</a>
+                <a href="">SWi Punto de venta</a>
+                <a href="">SWi Contabilidad</a>
+                <a href="">SWi Tiendas digitales</a>
+                <a href="">SWi Supertiendas</a>
+                <a href="">SWi Centros comerciales</a>
+                <a href="">SWi Contratos</a>
+                <a href="">SWi Recargas electrónicas</a>
+                <a href="">SWi Multipagos</a>
+                <a href="">SWi Ventas y Facturación</a>
+                <a href="">SWi Compras</a>
+                <a href="">SWi Cobranza y pagos</a>
+                <a href="">Ver más...</a>
+            </div>
+            <div class="link3">
+                <p>MARCAS INTEGRADAS</p>
+                <a href="">Más de 1000 marcas integradas...</a>
+                <a href="">Googleland</a>
+                <a href="">Amazon</a>
+                <a href="">Dunik</a>
+                <a href="">UNIME</a>
+                <a href="">Universilandia</a>
+                <a href="">Viaya</a>
+                <a href="">Apple</a>
+                <a href="">Telcel</a>
+                <a href="">Amadeus</a>
+                <a href="">Colaborar.mx</a>
+                <a href="">BBVA</a>
+                <a href="">IntegrITy</a>
+                <a href="">VISA</a>
+                <a href="">Bimbo</a>
+                <a href="">Nike</a>
+                <a href="">Facebook</a>
+                <a href="">DHL</a>
+                <a href="">Shutterstock</a>
+                <a href="">Ver más...</a>
+            </div>
+            <div class="link4">
+                <p>SERVICIOS Y PRODUCTOS</p>
+                <a href="">Crear mi Sitio Web Personal (sin costo)</a>
+                <a href="">Vitrina de Apps SWi</a>
+                <a href="">Dominios</a>
+                <a href="">Cuentas de correo</a>
+                <a href="">Calendarios</a>
+                <a href="">Drive de almacenamiento</a>
+                <a href="">Tiendas Digitales</a>
+                <a href="">Centros comerciales</a>
+                <a href="">Centros de exposiciones</a>
+                <a href="">Centros de convenciones y eventos</a>
+                <a href="">Centros de salud</a>
+                <a href="">Pasarelas de cobro</a>
+                <a href="">Compras a menor precio</a>
+                <a href="">SWi Plaza (Directo de fábrica)</a>
+                <a href="">Salud y belleza</a>
+                <a href="">Imágenes, Videos y Música</a>
+                <a href="">Juegos y entretenimiento</a>
+                <a href="">Deportes y Ciberdeportes</a>
+                <a href="">Productividad y eficiencia</a>
+                <a href="">Desarrollo exponencial</a>
+            </div>
+            <div class="link5">
+                <p>DE INTERÉS GENERAL</p>
+                <a href="">Iniciar sesión</a>
+                <a href="">Registrarme</a>
+                <a href="">Crear mi SWi</a>
+                <a href="">Mis tickets de compra y facturación</a>
+                <a href="">Cajero inteligente SWi</a>
+                <a href="">Depositar en SWi Card</a>
+                <a href="">Centro de atención SWi</a>
+                <a href="">Quejas y sugerencias</a>
+                <a href="">Contacto</a>
+                <a href="">Acreditaciones de SWi</a>
+                <a href="">Certificaciones de SWi</a>
+                <a href="">Seguridad de SWi</a>
+                <a href="">SWi Mujer</a>
+                <a href="">SWi Kids</a>
+                <a href="">SWi Especial</a>
+                <a href="">SWi Diversidad</a>
+                <a href="">SWi Empresas y ONGs</a>
+                <a href="">SWi Gobiernos</a>
+                <a href="">Rotaryland</a>
+                <a href="">SWi en Familia</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="izq">
+                <a class="logo" href=""></a>
+                <div class="redes">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-square-snapchat"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="centro">
+                <p>
+                    CONTACTO<br>
+
+En Ciudad Victoria, Tamaulipas, México.<br>
+Av. del Software Manzana Z, Parque Científico y Tecnológico, C.P. 87138.<br><br>
+
+En San Pedro Garza García, Nuevo León.<br>
+Río de la Plata 202, Col. del Valle, C.P. 66220<br><br>
+
+
+Correo:   contacto@mi.swi.mx<br>
+
+Teléfono:   (834) 407-9049<br>
+Telegram:   @SWiTecnologias_bot<br>
+                </p>
+            </div>
+            <div class="der"> 
+                <a href="">CENTRO DE ATENCIÓN SWi</a>
+                <p>
+                    PARA RECIBIR MÁS INFORMACIÓN DE NUESTROS SERVICIOS</p>
+                <a href="">REGÍSTRATE AQUÍ
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $('.preguntas .pr ').on('click', function (event) {
+                $('.preguntas .rs ').hide();
+
+                $(event.currentTarget).next().fadeIn();
+
+            });
+        });
+
+    </script>
+</body>
+
+</html>

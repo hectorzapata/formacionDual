@@ -24,10 +24,17 @@
         }
         /* Base */
         header {
+            background-color: #1380ed;
+            color: white;
         }
         header .contenedor .menu {
             list-style: none;
             display: flex;
+            flex-grow: 1;
+            margin: 0;
+            padding: 0 20px;
+            align-items: center;
+            justify-content: center;
         }
         .slider .slide {
             width: 100%;
@@ -54,75 +61,168 @@
             justify-content: center;
         }
         .izq h1 {
-    margin: 0;
-    font-size: 31pt;
-    margin: 0;
-}
-
-.izq p {
-    margin: 0;
-    font-size: 16pt;
-}
-
-.izq a {
-    background: white;
-    color: red;
-    width: 100px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 30px;
-    font-size: 10pt;
-    font-weight: 600;
-    text-decoration: none;
-}
-.circulo {
-    height: 350px;
-    width: 350px;
-    background: white;
-    border-radius: 50%;
-    border: 25px solid white;
-    background-image: url('https://previews.123rf.com/images/tupungato/tupungato1412/tupungato141200095/34336610-seamless-pattern-with-healthcare-medicine-and-pharmacy-icons-and-symbols-medical-background-doodle.jpg');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.persona {
-    width: 350px;
-    height: 400px;
-    /* background-color: red; */
-    background-image: url('https://www.nicepng.com/png/full/340-3400291_smiling-person-png-man-with-arms-crossed-png.png');
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    background-repeat: no-repeat;
-    left: -25px;
-    right: 0;
-    top: -46px;
-    bottom: 0;
-}
-section.slider {
-    background: #1380ed;
-}
+            margin: 0;
+            font-size: 31pt;
+            margin: 0;
+        }
+        .izq p {
+            margin: 0;
+            font-size: 16pt;
+        }
+        .izq a {
+            background: white;
+            color: #1380ed;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: 10pt;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .circulo {
+            height: 350px;
+            width: 350px;
+            background: white;
+            border-radius: 50%;
+            /* border: 25px solid white; */
+            background-image: url('https://previews.123rf.com/images/tupungato/tupungato1412/tupungato141200095/34336610-seamless-pattern-with-healthcare-medicine-and-pharmacy-icons-and-symbols-medical-background-doodle.jpg');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .persona, .personaBottom {
+            /* background-color: red; */
+            height: 100%;
+            background-image: url('https://www.nicepng.com/png/full/340-3400291_smiling-person-png-man-with-arms-crossed-png.png');
+            background-position: 40% -37%;
+            background-size: 65%;
+            position: absolute;
+            background-repeat: no-repeat;
+            left: 0;
+            right: 0;
+            top: -15%;
+            bottom: 0;
+        }
+        .personaBottom{
+            /* background-color: blue; */
+        }
+        section.slider {
+            background: #1380ed;
+        }
+        .circulo::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 25px solid white;
+            position: absolute;
+            border-radius: 50%;
+            top: -25px;
+            z-index: 1;
+            left: -25px;
+        }
+        .personaBottom {
+            top: 0px;
+            background-position: 40% 100%;
+        }
+        .persona {
+            z-index: 2;
+        }
+        header .contenedor {
+            justify-content: space-between;
+        }
+        .logo {
+            /* background-color: red; */
+            /* height: 100px; */
+            width: 200px;
+            background-size: 100%;
+            height: 52px;
+            background-position: 0px -92px;
+            background-repeat: no-repeat;
+        }
+        a.botonContacto {
+            color: white;
+            border: 1px solid white;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 10pt;
+            font-weight: 700;
+        }
+        .menu li {
+            margin: 0 11px;
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            background: #2e3868;
+            height: 400px;
+        }
+        section.testimonios {
+            height: 300px;
+        }
+        .newsletter .contenedor {
+            background: #1380ed;
+            flex-direction: column;
+            border-radius: 20px;
+            color: white;
+            align-items: center;
+            position: absolute;
+            width: 1000px;
+            left: 0;
+            right: 0;
+        }
+        section.newsletter {
+            position: relative;
+            height: 100px;
+        }
+        .newsletter h1 {
+            font-size: 30pt;
+            margin: 0;
+        }
+        .newsletter p {
+            font-size: 11pt;
+            max-width: 350px;
+            text-align: center;
+        }
+        .newsletter .grupo {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+        .newsletter .grupo input[type="text"] {
+            border: none;
+            font-size: 12pt;
+            width: 300px;
+        }
+        .newsletter .grupo button {
+            background: #1380ed;
+            color: white;
+            border: none;
+            padding: 20px;
+            border-radius: 30px;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="contenedor">
-            <div class="logo"></div>
+            <div class="logo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wikimedia_Espa%C3%B1a_logo_-_vertical_blanco.svg/2560px-Wikimedia_Espa%C3%B1a_logo_-_vertical_blanco.svg.png');"></div>
             <ul class="menu">
-                <li>Home</li>
-                <li>Doctor</li>
-                <li>Services</li>
-                <li>Review</li>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Doctor</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Review</a> </li>
             </ul>
-            <div class="botonContacto"></div>
+            <a class="botonContacto" href="#">Let's Talk</a>
         </div>
     </header>
-    <section>
-
-    </section>
     <section class="slider">
         <div class="contenedor swiper" id="slider">
             <div class="swiper-wrapper">
@@ -144,13 +244,14 @@ section.slider {
                 <div class="swiper-slide">
                     <div class="slide swiper-slide">
                         <div class="izq">
-                            <h1>Providing Community Access To Quality Healtcare</h1>
-                            <p>The Quality of our service and the proffesionalism of our staff are the reason for trustlife center's success</p>
-                            <a href="">Get started</a>
+                            <h1>Brindar acceso a la comunidad a atención médica de calidad</h1>
+                            <p>La calidad de nuestro servicio y la profesionalidad de nuestro personal, son la razón del éxito de nuestro centro de salud</p>
+                            <a href="">Iniciar</a>
                         </div>
                         <div class="der">
                             <div class="circulo">
                                 <div class="persona"></div>
+                                <div class="personaBottom"></div>
                             </div>
                         </div>
                     </div>
@@ -158,13 +259,14 @@ section.slider {
                 <div class="swiper-slide">
                     <div class="slide swiper-slide">
                         <div class="izq">
-                            <h1>Providing Community Access To Quality Healtcare</h1>
-                            <p>The Quality of our service and the proffesionalism of our staff are the reason for trustlife center's success</p>
-                            <a href="">Get started</a>
+                            <h1>Oferecendo acesso à comunidade a cuidados de saúde de qualidade</h1>
+                            <p>A Qualidade do nosso serviço e o profissionalismo dos nossos colaboradores são a razão do sucesso do centro de saúde</p>
+                            <a href="">Começar agora</a>
                         </div>
                         <div class="der">
                             <div class="circulo">
                                 <div class="persona"></div>
+                                <div class="personaBottom"></div>
                             </div>
                         </div>
                     </div>
@@ -172,7 +274,20 @@ section.slider {
             </div>
             <div class="swiper-pagination"></div>
         </div>
+        <figure class="lineas"></figure>
     </section>
+    <section class="testimonios"></section>
+    <section class="newsletter">
+        <div class="contenedor">
+            <h1>Suscribe To Newsletter</h1>
+            <p>Para que estés al día de las novedades médicas y de nuestras ofertas</p>
+            <div class="grupo">
+                <input type="text" placeholder="Escribe tu email">
+                <button>Enviar ahora</button>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>

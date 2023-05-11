@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Encode Sans', sans-serif;
+        }
+        .Secciones img {
+            height: 40px;
+        }
+
+        .Secciones {
+            display: flex;
+            padding: 20px 160px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Secciones ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .Secciones ul li {
+            list-style: none;
+            padding: 10px;
+        }
+        .Secciones ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+        .Secciones ul li:hover {
+    border-bottom: 2px solid #000000;
+    transition: all .45s;
+}
+.banner {
+    /* background: red; */
+    height: 500px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Header-Unime_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.bloque {
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/diversity-teenager-team-seminar-training-education-concept%28copia%293.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.bloque p {
+    max-width: 800px;
+}
+.bloque p a {
+    background-color: rgb(0, 152, 69);
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14pt;
+}
+.Cuadro {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Licenciaturas h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.Licenciaturas {
+    padding: 80px;
+}
+
+article.Cuadritos {
+    box-shadow: 0px 0px 35px -20px black;
+}
+article.Cuadritos figure{
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Mujer-Feliz%28copia%291.jpg');
+    margin: 0;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article.Cuadritos {
+    flex-basis: 33%;
+    max-width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.Info {
+    font-size: 12pt;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.Links {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Filas .Cuadro {
+    padding: 20px 20px;
+}
+
+.Links a {
+    margin: 4px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 9pt;
+}
+
+.Links span {
+    color: rgb(0, 153, 61);
+    font-size: 9pt;
+    margin: 5px 10px;
+}
+footer .Cuadro > div {
+    /* box-shadow: 0 0 10px red; */
+}
+
+footer .Cuadro {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 10pt;
+}
+
+footer {
+    margin-bottom: 100px;
+    background: rgb(0, 85, 184);
+    color: white;
+}
+
+.Unime {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Botones {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Datos {
+    flex-grow: 1;
+    font-size: 9pt;
+    padding: 15px 15px;
+}
+
+.Unime figure {
+    height: 120px;
+    width: 155px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Botones a {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 153, 61);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 9pt;
+}
+
+.Botones span {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="Secciones">
+        <img src="https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/unnamed%28copia%2914.png">
+        <ul>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/d1puVnNnTGQ1bHJDSkZuVzZMV0c5Zz09">UNIME</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/bllLSEh2Tk9XYnlOakcwOXBSSWxlQT09">Historia</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/OWh1R1hLckpHc1NzaDNnektFby8rUT09">Misión y visión</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/aElOYXk2TVBEQW9vUXNWb0oxYzJuQT09">Valores</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/M3JPcXdBczdKVzZDV29FTlVMM2srZz09">Modelo Educativo</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/Z01ndkJqcjdkQkRpMmV2WDZvcHZUZz09">Tutorías en línea</a>
+            </li>
+        </ul>
+    </div>
+    <a class="banner" href="https://www.instagram.com/redesunime" target="_blank"></a>
+    <div class="bloque">
+        <h1>
+            ¿Qué es la UNIME?
+        </h1>
+        <p>
+            La Universidad Mexicana del Emprendimiento, es una Universidad 100% virtual con carreras de nivel superior y posgrado con Registro de Validez Oficial emitido por la Secretaría de Educación. 
+            <br>
+            <br>
+            En esta singular Universidad todos los estudiantes desde que inician reciben un Sitio Web Inteligente que los conecta con un mundo digital especialmente diseñado para el aprendizaje, innovación desarrollo de proyectos y todo tipo de actividades estudiantiles. Desde su Sitio Web Inteligente los estudiantes pueden realizar toda clase de trámites y pagos, ingresar a sus aulas, acceder a las herramientas y material didáctico, estudiar, subir sus tareas, presentar exámenes, acceder a toda su información, solicitar becas o créditos, comunicarse en tiempo real con los maestros, ingresar a bibliotecas, a laboratorios y a talleres. Asimismo, la UNIME cuenta áreas virtuales de networking, así como con centros comerciales, artísticos, de convenciones, de exposiciones, de conferencias, de entretenimiento y de espectáculos disponibles para todos los alumnos 
+            <br>
+            <br>
+            La UNIME ofrece grandes beneficios a los estudiantes, ya que se adapta a la disponibilidad de tiempo de cada uno y se concentra principalmente en desarrollar sus competencias conforme a la profesión que eligen. 
+            <br>
+            <br>
+            Independientemente de la carrera o posgrado que tomen, todos los estudiantes viven la experiencia de crear su propia empresa y reciben entrenamiento especializado para sacar adelante cualquier proyecto de negocio que decidan emprender, asimismo, aprenden a utilizar las tecnologías más avanzadas para aplicarlas a los negocios y lograr los mejores resultados. 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Obtén más información, preinscríbete y solicita tu beca de hasta un 75% para toda la carrera a través de un 
+            <br>
+            <br>
+            <br>
+            <a href="https://unime.edu.mx/frepunime/listado-concesionario" target="_blank">Centro de Servicios Universitarios</a>
+        </p>
+    </div>
+</div>
+<div class="Licenciaturas">
+    <h1>
+        Licenciaturas y Maestrías
+    </h1>
+    <div class="Cuadro">
+        <article class="Cuadritos">
+            <figure></figure>
+            <div class="Info">
+                <span>
+                    Licenciatura en Negocios Internacionales
+                </span>
+                <a href="#">+Información</a>
+            </div>
+        </article>
+
+        <article class="Cuadritos">
+            <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Hombre%28copia%291%28copia%291.jpg');"></figure>
+            <div class="Info">
+                <span>
+                    Licenciatura en Comunicación y Medios Digitales
+                </span>
+                <a href="#">
+                    +Información
+                </a>
+            </div>
+        </article>
+
+        <article class="Cuadritos">
+            <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Mujer-3%28copia%291%28copia%291.jpg');"></figure>
+            <div class="Info">
+                <span>
+                    Licenciatura en Administración y Dirección de Negocios
+                </span>
+                <a href="#">
+                    +Información
+                </a>
+            </div>
+        </article>
+
+        <article class="Cuadritos">
+            <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Hombre_2%28copia%291%28copia%291.jpg');"></figure>
+            <div class="Info">
+                <span>
+                    Licenciatura en Administración de Capital Humano
+                </span>
+                <a href="#">
+                    +Información
+                </a>
+            </div>
+        </article>
+
+        <article class="Cuadritos">
+            <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Equipo%28copia%291%28copia%291.jpg');"></figure>
+            <div class="Info">
+                <span>
+                    Licenciatura en Administración de Tecnologías de la Informació
+                </span>
+                <a href="#">
+                    +Información
+                </a>
+            </div>
+        </article>
+
+        <article class="Cuadritos">
+            <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Mujer_5%28copia%291%28copia%291.jpg');"></figure>
+            <div class="Info">
+                <span>
+                    Maestría en Historia y Humanidades Digitale
+                </span>
+                <a href="#">
+                    +Información
+                </a>
+            </div>
+        </article>
+
+</div>
+    </div>
+        <div class="Filas">
+            <div class="Cuadro">
+            <div class="Links">
+            <span>
+                MI UNIVERSIDAD
+            </span>
+            <a href="#">UNIME</a>
+            <a href="#">Historia</a>
+            <a href="#">Valores UNIME</a>
+            <a href="#">Modelo educativo</a>
+            <a href="#">Tutoría en Línea</a>
+            <a href="#">Centros de Atención UNIME</a>
+            <a href="#">Licenciaturas</a>
+            <a href="#">Posgrados</a>
+            <a href="#">Centro de Excelencia</a>
+            <a href="#">Centro de Certficaciones</a>
+        </div>
+        <div class="Links">
+            <span>
+                OFERTA EDUCATIVA
+            </span>
+            <a href="#">Licenciaturas</a>
+            <a href="#">Posgrados</a>
+            <a href="#">Diplomados</a>
+            <a href="#">Talleres</a>
+            <a href="#">Cursos</a>
+            <a href="#">Seminarios</a>
+            <a href="#">Certificación de Competencias</a>
+            <a href="#">Certificación de Procesos</a>
+        </div>
+        <div class="Links">
+            <span>
+                SOCIAL Y CONTACTO
+            </span>
+            <a href="#">Contacto (Información General)</a>
+            <a href="#">UNIME Alexa</a>
+            <a href="#">Mi Correo UNIME</a>
+            <a href="#">UNIME Red</a>
+            <a href="#">UNIME Noticias</a>
+            <a href="#">UNIME Tv</a>
+            <a href="#">Calendario de Eventos</a>
+            <a href="#">Aliados UNIME</a>
+            <a href="#">Integraciones</a>
+            <a href="#">Intercambios</a>
+        </div>
+        <div class="Links">
+            <span>
+                INSTALACIONES Y TECNOLOGÍAS
+            </span>
+            <a href="#">Zona UNIME</a>
+            <a href="#">Cajero Inteligente</a>
+            <a href="#">Aulas</a>
+            <a href="#">Biblioteca</a>
+            <a href="#">Laboratorios</a>
+            <a href="#">Centro de Convenciones</a>
+            <a href="#">Centro de Espectáculos</a>
+            <a href="#">Centro de Exposiciones</a>
+            <a href="#">Centro Comercial</a>
+            <a href="#">Zona de Entretenimiento</a>
+        </div>
+        <div class="Links">
+            <span>
+                ADMISIONES Y TRÁMITES
+            </span>
+            <a href="#">Inscripciones</a>
+            <a href="#">Requisitos</a>
+            <a href="#">UNIME Kiosco</a>
+            <a href="#">Control Escolar</a>
+            <a href="#">Becas</a>
+            <a href="#">Pagos y Facturación</a>
+            <a href="#">Quejas y Sugerencias</a>
+            <a href="#">SWi Card</a>
+            <a href="#">Crear mi SWi</a>
+            <a href="#">Únete al Staff o Equipo Docente</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="Cuadro">
+        <div class="Unime">
+            <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20Unime%20Blanco%28copia%291.png');"></figure>
+        </div>
+        <div class="Datos">
+            <p>
+                CONTACTO 
+                <br>
+                CCT: 28PSU0199R 
+                <br>
+                En Ciudad Victoria, Tamaulipas, México. 
+                <br>
+                Ave. del Software, Manzana Z, Parque Científico y Tecnológico, C.P. 87138 
+                <br>
+                contacto@unime.edu.mx 
+                <br>
+                Teléfono: (834) 316-9502 
+                <br>
+                Telegram:@UNIME_Edu_bot 
+                <br>
+            </p>
+        </div>
+        <div class="Botones">
+            <a href="">
+                centro de atención unime
+            </a>
+            <span>
+                Para recibir noticias de la unime:
+            </span>
+            <a href="">
+                registrate aquí
+            </a>
+        </div>
+    </div>
+</footer>  
+</body>
+</html>

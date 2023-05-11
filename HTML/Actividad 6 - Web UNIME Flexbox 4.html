@@ -1,0 +1,1005 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Encode Sans', sans-serif;
+        }
+        .menu img {
+            height: 40px;
+        }
+
+        .menu {
+            display: flex;
+            padding: 20px 160px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            list-style: none;
+            padding: 10px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+        .menu ul li:hover {
+    border-bottom: 2px solid #000000;
+    transition: all .45s;
+}
+
+.Lideres a{
+    font-family: null, sans-serif;
+    font-size: 17.3333px;
+    color: rgb(31, 114, 191);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 0px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.Lideres{
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0 !important;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+.banner {
+    /* background: red; */
+    height: 500px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Header-Unime_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin-left: 27px;
+    margin-right: 20px;
+}
+.bloque {
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/diversity-teenager-team-seminar-training-education-concept%28copia%293.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.bloque p {
+    max-width: 800px;
+}
+.bloque p a {
+    background-color: rgb(0, 152, 69);
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14pt;
+}
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.licenciaturas a {
+    font-size: 14px;
+    color: rgb(30, 112, 191);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid rgb(30, 112, 191);
+    border-radius: 0px;
+}
+
+.licenciaturas {
+    padding: 60px;
+}
+
+article.licenciatura {
+    box-shadow: 0px 0px 35px -20px black;
+}
+article.licenciatura figure{
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Mujer-Feliz%28copia%291.jpg');
+    margin: 0;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article.licenciatura {
+    flex-basis: 33%;
+    max-width: 300px;
+    height: 220px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.descripcion {
+    font-size: 9pt;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.links {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.accesos .contenedor {
+    padding: 40px 0;
+}
+
+.links a {
+    margin: 2px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 8pt;
+}
+
+.links span {
+    color: rgb(0, 153, 61);
+    font-size: 8pt;
+    margin: 5px 10px;
+}
+
+footer .contenedor {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 10pt;
+}
+
+footer {
+    margin-bottom: 100px;
+    background: rgb(0, 85, 184);
+    color: white;
+}
+
+.izq {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.derecha {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    flex-grow: 1;
+    font-size: 8pt;
+    padding: 20px 0;
+}
+
+.izq figure {
+    height: 100px;
+    width: 125px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.derecha a {
+    background: white;
+    border-radius: 5px;
+    padding: 6px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 153, 61);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 8pt;
+}
+
+.derecha span {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/**/
+.contenedor-img{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 135px;
+    margin-top: 40px;
+}
+/**/
+
+/*T1*/
+
+.T1 .contenedor-T1{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    margin: 115px;
+    margin-bottom: 85px;
+}
+
+.T1 .contenedor-T1 > div{
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+
+.T1 .contenedor-T1 .texto{ 
+    width: 50%; 
+    padding: 58px;
+    font-size: 14pt;
+    letter-spacing: 1px;
+}
+.T1 .contenedor-T1 .imagen-T1{
+    width: 50%;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Li%CC%81deres%28copia%291.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}   
+
+.tx{
+    text-align: center;
+    font-size: 14pt;
+}
+
+.tx a {
+    background-color: rgb(0, 152, 69);
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14pt;
+    align-items: center;
+}
+/**/
+
+
+
+/*T2*/
+.T2 .contenedor-T2{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+}
+
+.T2 .contenedor-T2 > div{
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.T2 .contenedor-T2 .texto1{
+    width: 50%; 
+    padding: 32px;
+    letter-spacing: 1px;
+    text-align: justify;
+    
+}
+.T2 .contenedor-T2 .imagen-T2{
+    width: 50%;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Alexa_Unime_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+}  
+/**/
+.T6 .contenedor-T6{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.T6 .contenedor-T6 > div{
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.T6 .contenedor-T6 .texto6{
+    width: 50%; 
+    padding: 32px;
+    text-align: justify;
+    
+}
+.T6 .contenedor-T6 .imagen-T6{
+    width: 50%;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/SWi-Card_5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.txo{
+    text-align:center;
+    margin-left: 120px;
+}
+
+.txo a {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    font-size: 14pt;
+    align-items: center;
+}
+/**/
+.T3 .contenedor-T3{
+    width: 1250px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    background-color: rgb(42 117 205);
+}
+
+.T3 .contenedor-T3 > div{
+    flex-grow: 0;
+}
+
+.T3 .contenedor-T3 .texto2{
+    margin-top: 80px;
+    width: 40%; 
+    padding: 30px;
+    color: #ffffff;
+    text-align: justify;
+    
+}
+.T3 .contenedor-T3 .imagen-T3{
+    margin-top: 150px;
+    width: 45%;
+    height: 310px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/shutterstock_266853047.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;      
+}   
+/**/
+
+/**/
+.T4 .contenedor-T4{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+}
+
+.T4 .contenedor-T4 > div{
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.T4 .contenedor-T4 .texto3{
+    width: 50%; 
+    padding: 32px;
+    text-align: justify;
+}
+.T4 .contenedor-T4 .imagen-T4{
+    width: 50%;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Woman-Libertad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+}  
+/**/
+
+/**/
+.T5{
+    background-color: rgb(237, 238, 239);
+}
+
+.T5 .contenedor-T5{
+    width: 1000px;
+    height: 630px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+}
+
+.T5 .contenedor-T5 .texto4{
+    width: 50%; 
+    padding: 32px;
+    margin-top: 190px;
+    text-align: justify;
+}
+.T5 .contenedor-T5 .imagen-T5{
+    width: 590px;
+    height: 400px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Profesores.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    margin-top: 120px;    
+    margin-left: 50px;  
+} 
+/**/
+.aliados span {
+    text-align: center;
+}
+
+
+.aliados {
+    padding: 60px;
+}
+
+.aliados .contenedor{
+    margin: left 100px;
+    
+}
+
+.aliados .contenedor .ali1{
+    height: 70px;
+    width: 150px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20SWi%20%281%29.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+}
+.aliados .contenedor .ali2 {
+    height: 50px;
+    width: 150px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20Google.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+}
+.aliados .contenedor .ali3 {
+    height: 48px;
+    width: 150px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20Visa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+}
+.aliados .contenedor .ali4 {
+    height: 150px;
+    width: 150px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Bibliotechnia%20logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+}
+.aliados .contenedor .ali5 {
+    height: 89px;
+    width: 150px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20AWS.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aliados .contenedor .ali6 {
+    height: 50px;
+    width: 240px;
+    background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20telcel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p.Respuesta {
+    display: none;
+}
+
+.preguntas {
+    width: 800px;
+}
+
+p.pregunta {
+    text-align: left;
+    font-weight: 600;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 0 15px -6px black;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <img src="https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/unnamed%28copia%2914.png">
+        <ul>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/d1puVnNnTGQ1bHJDSkZuVzZMV0c5Zz09">UNIME</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/bllLSEh2Tk9XYnlOakcwOXBSSWxlQT09">Historia</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/OWh1R1hLckpHc1NzaDNnektFby8rUT09">Misión y visión</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/aElOYXk2TVBEQW9vUXNWb0oxYzJuQT09">Valores</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/M3JPcXdBczdKVzZDV29FTlVMM2srZz09">Modelo Educativo</a>
+            </li>
+            <li>
+                <a href="https://unime.edu.mx/ms/unime/Z01ndkJqcjdkQkRpMmV2WDZvcHZUZz09">Tutorías en línea</a>
+            </li>
+        </ul>
+    </div>
+    <a class="banner" href="https://www.instagram.com/redesunime" target="_blank"></a>
+
+    <div class="Lideres">
+       <a href="https://unime.edu.mx/ms/unime/WTh4SFE2dmVaa3VBN1BiWXVnMmlhUT09">Más información</a>
+       <span style="font-size: 13pt;">&nbsp; /&nbsp;</span>
+       <a href="https://unime.edu.mx/ms/unime/WjdtTDFnM0xCUk9mQXYzU0JWT3hTQT09">Preinscripciones</a>
+       <span style="font-size: 13pt;">&nbsp; /&nbsp;</span>
+       <a href="https://unime.edu.mx/ms/unime/QWoweHJmbk9tRGV0YTQyd3dOOElOZz09">Inscripciones</a>
+       <span style="font-size: 13pt;">&nbsp; /&nbsp;</span>
+       <a href="https://unime.edu.mx/ms/unime/WUhzMHpnT2dFTFJzcFhqeWNhRTFZQT09">Becas</a>
+       <span style="font-size: 13pt;">&nbsp; /&nbsp;</span>
+       <a href="https://unime.edu.mx/ms/unime/dHdWN3o1a1dsY090NmRzU1NpVHZZUT09">Crédito estudiantil</a>
+       <a href="https://unime.edu.mx/frepunime/listado-concesionario">Centros de Servicios Universitarios</a>
+    </div>
+
+    <div class="contenedor-img">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/swUrguWQXFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </div>
+
+    <section class="T1">
+
+     <div class="contenedor-T1">
+
+    <div class="texto">
+      <span style="font-size: 20pt;">Líderes</span> <b style="font-size: 20pt;">UNIME</b>
+      <p>Elige la carrera que te apasiona e intégrate a la nueva generación de líderes mejor preparados para lograr un impacto positivo en la vida de millones de personas.
+        <br>
+        <br>
+        Domina las metodologías y tecnologías más avanzadas que la UNIME te ofrece y logra tus objetivos personales adquiriendo las habilidades para innovar y resolver los grandes retos de la nueva era.
+        </p>
+    </div>
+
+        <div class="imagen-T1" ></div>
+    </div>
+    <div class="tx"> 
+        <br>
+        <p>Obtén más información, preinscríbete y solicita tu beca de hasta un 75% para toda la carrera a través de un</p>
+        <br>
+        <a href="https://unime.edu.mx/frepunime/listado-concesionario" target="_blank">Centro de Servicios Universitarios</a>
+        <br>
+    </div>
+    </section>
+
+    <div class="licenciaturas">
+        <span style="font-size: 25pt; margin-left: 400px; letter-spacing: 2px;">Lícenciaturas y Maestrias</span>
+        <div class="contenedor">
+            <article class="licenciatura">
+                <figure></figure>
+                <div class="descripcion">
+                    <span>Licenciatura en Negocios Internacionales</span>
+                    <a href="https://unime.edu.mx/ms/unime/Umg4WDF4Ylp2cVE4Zi9JOW1QOUpVdz09" style="text-decoration: none;"><b>+Información</b></a>
+                </div>
+            </article>
+            <article class="licenciatura">
+                <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Hombre%28copia%291%28copia%291.jpg');"></figure>
+                <div class="descripcion">
+                    <span>Licenciatura en Comunicación y Medios Digitales</span>
+                    <a href="https://unime.edu.mx/ms/unime/ZGh0b2VHZnI4QkYwZ1pHYUFWUjZKZz09" style="text-decoration: none;"><b>+Información</b></a>
+                </div>
+            </article>
+            <article class="licenciatura">
+                <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Mujer-3%28copia%291%28copia%291.jpg');"></figure>
+                <div class="descripcion">
+                    <span>Licenciatura en Administración y Dirección de Negocios</span>
+                    <a href="https://unime.edu.mx/ms/unime/SGhhR2ZZbWNZUkFRRnhlbkRXayswZz09" style="text-decoration: none;"><b>+Información</b></a>
+                </div>
+            </article>
+            <article class="licenciatura">
+                <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Hombre_2%28copia%291%28copia%291.jpg');"></figure>
+                <div class="descripcion">
+                    <span>Licenciatura en Administración de Capital Humano</span>
+                    <a href="https://unime.edu.mx/ms/unime/WnJWbXM5aVB5WGxkUVlUekt6cnQrQT09" style="text-decoration: none;"><b>+Información</b></a>
+                </div>
+            </article>
+            <article class="licenciatura">
+                <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Equipo%28copia%291%28copia%291.jpg');"></figure>
+                <div class="descripcion">
+                    <span>Licenciatura en Administración de Tecnologías de la Informació</span>
+                    <a href="https://unime.edu.mx/ms/unime/cDl2a3VMSmpCWlN3ZTFmcFdLWVdHUT09" style="text-decoration: none;"><b>+Información</b></a>
+                </div>
+            </article>
+            <article class="licenciatura">
+                <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Mujer_5%28copia%291%28copia%291.jpg');"></figure>
+                <div class="descripcion">
+                    <span>Maestría en Historia y Humanidades Digitale</span>
+                    <a href="https://www.unime.edu.mx/ms/unime/YkxLb0RwQUJQdTRSTGx2M0pzRW5Ldz09" style="text-decoration: none;"><b>+Información</b></a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <p>Los títulos y cédulas profesionales que obtienen los egresados de la UNIME cuentan con la validez oficial de la Secretaría de Educación</p>
+    </div>
+
+    <div class="tx"> 
+        <br><br>
+        <p>Obtén más información, preinscríbete y solicita tu beca de hasta un 75% para toda la carrera a través de un</p>
+        <br>
+        <a href="https://unime.edu.mx/frepunime/listado-concesionario" target="_blank">Centro de Servicios Universitarios</a>
+        <br>
+    </div>
+
+<br><br><br><br><br>
+    
+    <section class="T2">
+
+        <div class="contenedor-T2">
+   
+       <div class="texto1">
+        <b style="font-size: 20pt;">Alexa</b> <span style="font-size: 20pt;">en</span> <b style="font-size: 20pt;">UNIME</b>
+         <p>De la mano, la UNIME y Amazon trabajan en esta maravillosa integración que permitirá a los alumnos comunicarse por voz y realizar diversos procesos en la intranet de la UNIME, por ejemplo pagar inscripciones y colegiaturas, comprar y pagar servicios y productos, también podrán localizar y controlar sus dispositivos, comunicarse con otras personas, enviar dinero, hacer citas, organizar reuniones, configurar recordatorios, obtener información dentro de la Universidad, de otras Universidades y de Internet en general, entre muchas otras cosas.
+            <br><br>
+            Y lo más interesante, podrán consultar con Alexa cualquier duda sobre las clases, los exámenes, sus calificaciones, información académica, eventos, días festivos y mucho más...
+           </p>
+       </div>
+   
+           <div class="imagen-T2" ></div>
+       </div>
+       </section>
+
+       <br><br><br>
+     
+       <section class="T3">
+
+        <div class="contenedor-T3">
+<br>
+            <div class="imagen-T3" ></div>
+   
+       <div class="texto2">
+         <h1>Tecnología UNIME</h1>
+         <p>La UNIME ha desarrollado sus propias tecnologías, metodologías y procesos de enseñanza aprendizaje y los ha certificado para asegurar los mejores resultados en la educación.
+ <br><br>
+            La tecnología más actual como el internet de las cosas, computación en la nube, big data, blockchain, analytics, inteligencia artificial, entre otras, forman parte de las herramientas de enseñanza en la UNIME.
+<br><br>
+            Las aulas cuentan con sistemas de videoconferencia con traducción en tiempo real a más de 30 idiomas y la plataforma que se entrega a cada estudiante se conecta a la red más grande de universidades en el mundo y a cientos de organizaciones con tecnología educativa entre las que se encuentran Google, Visa, MasterCard, Bibliotechnia, Léctimus, Learnglish, Amadeus, BBVA, Apple, entre otras.</p>
+       </div>
+    </div>
+       </section>
+<br><br><br><br>
+       <section class="T4">
+
+        <div class="contenedor-T4">
+   
+       <div class="texto3">
+        <b style="font-size: 20pt;">Libertad y resultados </b> <span style="font-size: 20pt;">en su máxima expresión</span> 
+            <p>Estudiar desde cualquier lugar, cuando puedes y donde puedes, es de gran valor.
+            <br><br>
+             Sin embargo, dominar las metodologías y tecnologías más avanzadas para lograr tus objetivos personales y adquirir las habilidades para innovar y resolver los grandes retos de la nueva era, no tiene comparación.</p>
+       </div>
+   
+           <div class="imagen-T4" ></div>
+       </div>
+       </section>
+    <br>
+
+    <div class="tx"> 
+        <br><br>
+        <p>Obtén más información, preinscríbete y solicita tu beca de hasta un 75% para toda la carrera a través de un</p>
+        <br><br>
+        <a href="https://unime.edu.mx/frepunime/listado-concesionario" target="_blank">Centro de Servicios Universitarios</a>
+        <br>
+    </div>
+
+       <br><br><br>
+       <br><br><br>
+
+       <section class="T5">
+
+        <div class="contenedor-T5">
+
+            <div class="imagen-T5" ></div>
+   
+       <div class="texto4">
+            <span style="margin-left: 40px ;font-size: 20pt;">Profesores del más </span> <b style="font-size: 20pt;">alto nivel</b>
+         <p style="margin-left: 40px;">Todos los profesores de la UNIME:</p>
+         <p>
+            <ul style="list-style: none;">
+                    <li style="font-size: 13pt;text-align: justify; letter-spacing: 1px;">
+                        <i style="color: #e8505b; font-size: 19px;" class="far fa-check-circle"></i>
+                        con Maestría y/o Doctorado.
+                    </li> 
+                    <li style="font-size: 13pt;text-align: justify; letter-spacing: 1px;">
+                        <i style="color: #e8505b; font-size: 19px;" class="far fa-check-circle"></i>
+                        Están certificados como docentes.
+                    </li>
+                    <li style="font-size: 13pt;text-align: justify; letter-spacing: 1px;">
+                        <i style="color: #e8505b; font-size: 19px;" class="far fa-check-circle"></i>
+                        Están certificados en educación a distancia.
+                    </li>
+                    <li style="font-size: 13pt;text-align: justify;  letter-spacing: 1px;">
+                        <i style="color: #e8505b; font-size: 19px;" class="far fa-check-circle"></i>
+                     Tienen amplia experiencia en la materia que imparten.
+                    </li>
+                    <li style="font-size: 13pt;text-align: justify; letter-spacing: 1px;">
+                        <i style="color: #e8505b; font-size: 19px;" class="far fa-check-circle"></i>
+                        Muchos de ellos son catedráticos en prestigiadas universidades del extranjeros.
+                    </li>
+            </ul>
+        </p>
+       </div>
+       </div>
+       </section>
+
+    <div class="bloque">
+        <h1>¿Qué es la UNIME?</h1>
+        <p>
+            La Universidad Mexicana del Emprendimiento, es una Universidad 100% virtual con carreras de nivel superior y posgrado con Registro de Validez Oficial emitido por la Secretaría de Educación. <br><br>
+            En esta singular Universidad todos los estudiantes desde que inician reciben un Sitio Web Inteligente que los conecta con un mundo digital especialmente diseñado para el aprendizaje, innovación desarrollo de proyectos y todo tipo de actividades estudiantiles. Desde su Sitio Web Inteligente los estudiantes pueden realizar toda clase de trámites y pagos, ingresar a sus aulas, acceder a las herramientas y material didáctico, estudiar, subir sus tareas, presentar exámenes, acceder a toda su información, solicitar becas o créditos, comunicarse en tiempo real con los maestros, ingresar a bibliotecas, a laboratorios y a talleres. Asimismo, la UNIME cuenta áreas virtuales de networking, así como con centros comerciales, artísticos, de convenciones, de exposiciones, de conferencias, de entretenimiento y de espectáculos disponibles para todos los alumnos <br><br>
+            La UNIME ofrece grandes beneficios a los estudiantes, ya que se adapta a la disponibilidad de tiempo de cada uno y se concentra principalmente en desarrollar sus competencias conforme a la profesión que eligen. <br><br>
+            Independientemente de la carrera o posgrado que tomen, todos los estudiantes viven la experiencia de crear su propia empresa y reciben entrenamiento especializado para sacar adelante cualquier proyecto de negocio que decidan emprender, asimismo, aprenden a utilizar las tecnologías más avanzadas para aplicarlas a los negocios y lograr los mejores resultados. <br><br>
+            <br><br><br><br>
+            Obtén más información, preinscríbete y solicita tu beca de hasta un 75% para toda la carrera a través de un <br><br>
+            <br>
+            <a href="https://unime.edu.mx/frepunime/listado-concesionario" target="_blank">Centro de Servicios Universitarios</a>
+        </p>
+    </div>
+
+    <section class="T6">
+
+        <div class="contenedor-T6">
+            <div class="imagen-T6" ></div>
+       <div class="texto6">
+        <span style="font-size: 20pt;">Paga todo fácil, rápido y seguro con</span> <b style="font-size: 20pt;">SWi Card</b>
+         <p>Al inscribirte en la <b>UNIME</b> obtienes <b>Swi card</b> automáticamente, una tarjeta de débito digital a la que puedes depositar fácilmente para comprar y pagar colegiaturas, conciertos, libros, música, recargas telefónicas, conferencias y todo lo que necesites en la <b>UNIME</b>, solo tienes que seguir las instrucciones para depositar.</p>
+            <br><br>
+            Puedes convertir tu <b>Swi card</b> en tarjeta de crédito estudiantil para utilizarlo cuando lo requieras, solicita tu línea ahí mismo.
+
+            Factura todos tus depósitos en <b>Swi card</b> al instante.           </p>
+       </div>
+       </div>
+       <div class="txo"> 
+        <br>
+        <a href="https://unime.edu.mx/usuarios/auth/login?url=2QADI6jiYsK94I078Ei%2FW280yS2%2Bce7iMclkflgH0BzFVb7ICZkb2wf%2BXU27%2FO7hGa0ZIXYLOe98VXX8S0Oi6Q%3D%3D" target="_blank">Ir a swi card</a>
+        <br>
+    </div>
+       </section>
+       <br><br><br>
+
+       <div class="aliados">
+        <span style="margin-left: 400px; font-size: 20pt; margin-bottom: 26px;">ALIADOS TECNOLÓGICOS DE UNIME</span>
+        <div class="contenedor">
+            <div class="ali1">
+                <a href="https://swi.mx/"></a>
+            </div>
+            <article class="ali2">
+                <a href=""></a>    
+            </article>
+            <article class="ali3">
+            </article>
+            <article class="ali4">
+            </article>
+            <article class="ali5">
+            </article>
+            <article class="ali6">
+            </article>
+        </div>
+    </div>
+  
+       <br><br><br>
+     
+       <div class="preguntas-frecuentes">
+        <div class="contenedor">
+
+            <div class="preguntas">
+
+              <p class="pregunta">
+                ¿Qué es la UNIME?
+              </p>
+              <p class="Respuesta">
+                La UNIME es la Universidad Mexicana del Emprendimiento, una institución académica enfocada en reunir, preparar e inspirar a jóvenes líderes para que se esfuercen por comprender y facilitar el desarrollo exponencial de las ciencias y las tecnologías para aplicarlas en la solución de los grandes desafíos que presenta el desarrollo de la humanidad y crear un futuro más abundante y feliz para todos. Su nombre hace referencia al espíritu emprendedor, una semilla que todos traemos y que debe germinar para lograr un impacto positivo en la vida de millones de personas. <br> <br>
+                La UNIME basa su éxito académico en una cultura que va mucho más allá de un salón de clases, utiliza la pedagogía desescolarizada empleando métodos lúdicos e innovadores para lograr que los estudiantes vivan experiencias que los hacen mirar más allá de su propio campo, más abiertos, curiosos y colaboradores en equipos, y que sobre todo valoran y comprenden el trabajo de los demás. <br> <br>
+                La UNIME se distingue y tiene todos los ingredientes necesarios para formar personas y estimular la aparición de líderes que diseñen y produzcan avances para apalancar el desarrollo sostenible y la mejora en la calidad de vida.
+              </p>
+              <p class="pregunta">
+                ¿Qué validez tienen las Licenciaturas de la UNIME?
+              </p>
+              <p class="Respuesta">
+                La Universidad Mexicana del Emprendimiento es una Universidad formal con Registros de Validez Oficial de Estudios NS/018/04/2021, NS/019/04/2021, NS/020/04/2021, NS/021/04/2021 NS/022/04/2021, NS/023/04/2021 publicados en el Periódico Oficial del Estado de Tamaulipas, Número 111, Tomo CXLVI de fecha 16 de Septiembre de 2021. La Universidad Mexicana del Emprendimiento con C.C.T. 28PSU0199R es auspiciada por Consultora Mexicana de Negocios, S.C. institución legalmente constituida bajo las leyes de los Estados Unidos Mexicanos con Registro Federal de Causantes CMN0302066B2 con domicilio fiscal en Avenida del Software S/N, Manzana Z, Parque Científico y Tecnológico en Ciudad Victoria, Tamaulipas, México. Código Postal 87138.
+             </p>
+              <p class="pregunta">
+                ¿Es totalmente en línea?
+              </p>
+              <p class="Respuesta">
+                La UNIME es la primera universidad en Tamaulipas y una de las primeras en México con modalidad totalmente "NO ESCOLARIZADA", es decir que es completamente en línea, cuenta con una infraestructura tecnológica de primer mundo que incluye salones virtuales para que los estudiantes tomen sus clases, accedan al material didáctico, entreguen sus trabajos y presenten sus exámenes. Asimismo, dispone de salas de videoconferencia para que los maestros se reúnan con sus alumnos para realizar sesiones de retroalimentación o para abordar diversos temas individuales o grupales. También cuenta con bibliotecas y diversas herramientas digitales de última generación para reforzar la calidad de los procesos de enseñanza-aprendizaje. Todo ello le da la ventaja a los estudiantes de que pueden realizar sus estudios desde cualquier lugar en donde se encuentren, así como adaptarlos para optimizar sus tiempos.
+              </p>
+              <p class="pregunta">
+                ¿Cuáles son los requisitos para entrar en la UNIME?
+              </p>
+              <p class="Respuesta">
+                Para ingresar a cualquiera de las carreras de la UNIME se requiere: <br>
+1.- Presentar su solicitud de ingreso.<br>
+2.- Presentar su certificado del nivel académico anterior al solicitado, digitalizado a color, legible, en el formato completo, peso máximo 5MB.<br>
+3.- Presentar su acta de nacimiento digitalizada a color, legible, en el formato completo, peso máximo 5MB.<br>
+4.- Presentar Fotografía de frente a color (rostro despejado, sin lentes o anteojos).<br>
+5.- Presentar su CURP (última versión descargada de página oficial: descargaraquí).<br>
+6.- Efectuar los pagos correspondientes de inscripción y nuevo ingreso.<br>
+</p>
+<p class="pregunta">
+   ¿Cuáles son los requisitos de Titulación?
+  </p>
+  <p class="Respuesta">
+    1.- Haber obtenido el 100% de los créditos en cada una de las áreas curriculares que comprenden el plan de estudios correspondientes dentro de los plazos establecidos.1.- Haber obtenido el 100% de los créditos en cada una de las áreas curriculares que comprenden el plan de estudios correspondientes dentro de los plazos establecidos. <br>
+2.- No tener sanción académica, disciplinaria o estar suspendida en sus derechos.<br>
+3.- Haber cumplido con toda la documentación en tiempo y forma, así como los procedimientos establecidos.<br>
+4.- Realizar en forma oportuna el pago de derechos con la cuota vigente al momento de realizar la solicitud correspondiente.<br>
+5.- Obtener del área de servicios escolares la revisión de estudios correspondiente.<br>
+6.- Como parte de su formación académica los alumnos deben desarrollar en su último año escolar un proyecto integrador en la que deben ostentar el puntaje mínimo establecido por la Universidad, esta disposición aplica para todas las carreras impartidas.<br>
+7.- Acreditar el nivel de inglés mínimo establecido por la institución. En cualquier grado que se quiera titular el estudiante es necesario presentar nivel de segundo o tercer idioma para el egreso y titulación ver programa de lenguas en el documento curricular y Anexos: Anteproyecto de Acuerdo SEP (2006) y Marco Común Europeo de Referencias para las Lenguas (MCER, 2002) para niveles de lenguas y niveles de docencia.<br>
+8.- Tener el Servicio Social concluido satisfactoriamente.<br>
+</p>
+  <p class="pregunta">
+    ¿Cuáles son las ventajas de estudiar en la UNIME?
+  </p>
+  <p class="Respuesta">
+    Estudiar en la UNIME, te ofrece los siguientes beneficios:
+    <br><br>
+1.- Administración y aprovechamiento de tu tiempo personal y profesional. Te permite estudiar de acuerdo a tus actividades diarias, desde la comodidad de tu casa.<br>
+2.- Colegiaturas accesibles. <br>
+3.- Posibilidad de acceso a becas y/o créditos estudiantiles.<br>
+4.- Acceso a plataformas para consulta bibliográfica totalmente gratis.<br>
+5.- Elaboración de actividades académicas y casos prácticos apegadas totalmente a la realidad demandante.<br>
+6.- Visión más amplia sobre las necesidades actuales de la sociedad y la importancia de emprender en ella.<br>
+7. Cultura del emprendimiento (Independientemente de la carrera o posgrado que tomen, todos los estudiantes viven la experiencia de crear su propio negocio, lo que les permite estar preparados ya sea para un empleo de buen nivel o para emprender su propio negocio).<br>
+</p>
+            </div>
+
+        </div>
+       </div>
+
+    <div class="accesos">
+        <div class="contenedor">
+            <div class="links">
+                <span>MI UNIVERSIDAD</span>
+                <a href="https://unime.edu.mx/ms/unime/d1puVnNnTGQ1bHJDSkZuVzZMV0c5Zz09" target="_blank">UNIME</a>
+                <a href="https://unime.edu.mx/ms/unime/bllLSEh2Tk9XYnlOakcwOXBSSWxlQT09" target="_blank">Historia</a>
+                <a href="https://unime.edu.mx/ms/unime/aElOYXk2TVBEQW9vUXNWb0oxYzJuQT09" target="_blank">Valores UNIME</a>
+                <a href="https://unime.edu.mx/ms/unime/M3JPcXdBczdKVzZDV29FTlVMM2srZz09" target="_blank">Modelo educativo</a>
+                <a href="https://unime.edu.mx/ms/unime/Z01ndkJqcjdkQkRpMmV2WDZvcHZUZz09" target="_blank">Tutoría en Línea</a>
+                <a href="https://unime.edu.mx/frepunime/listado-concesionario" target="_blank">Centros de Atención UNIME</a>
+                <a href="https://unime.edu.mx/ms/unime/ZWFhTVBmWlA2bkFpeEM0dD" target="_blank">Licenciaturas</a>
+                <a href="https://unime.edu.mx/ms/unime/T0lFU1VlRGdTcFRLdVU5Sl" target="_blank">Posgrados</a>
+                <a href="https://unime.edu.mx/ms/unime/cUpsQ1IzZkh1aGhscG1RWm" target="_blank">Centro de Excelencia</a>
+                <a href="https://unime.edu.mx/ms/unime/UG8xL3plK2xlOGx5bmx0Lz" target="_blank">Centro de Certficaciones</a>
+            </div>
+                <div class="links">
+                <span>OFERTA EDUCATIVA</span>   
+                <a href="https://unime.edu.mx/ms/unime/ZWFhTVBmWlA2bkFpeEM0dDF4empYQT09" target="_blank">Licenciaturas</a>
+                <a href="https://unime.edu.mx/ms/unime/T0lFU1VlRGdTcFRLdVU5SlhVTzhsZz09" target="_blank">Posgrados</a>
+                <a href="https://unime.edu.mx/ms/unime/MGlSbFUzdjRuVGFPSkxHZzhTdndidz09" target="_blank">Diplomados</a>
+                <a href="https://unime.edu.mx/ms/unime/V0ZqK1NFNFYrbjl6UWJ1YlFodU40UT09" target="_blank">Talleres</a>
+                <a href="https://unime.edu.mx/ms/unime/elpQcVFjeFhHbUc5WDJGUnU3RTlYQT09" target="_blank">Cursos</a>
+                <a href="https://unime.edu.mx/ms/unime/RDdpRUhTdXNnQjBTZnZNWjA4ZE94Zz09" target="_blank">Seminarios</a>
+                <a href="https://unime.edu.mx/ms/unime/WVZRd3cvN2M3OWRsbHFFVVQ1MndJQT09" target="_blank">Certificación de Competencias</a>
+                <a href="https://unime.edu.mx/ms/unime/dE9TeHN3VXQvS3p3RFg5SWI2ZWIrZz09" target="_blank">Certificación de Procesos</a>
+            </div>
+            <div class="links">
+                <span>SOCIAL Y CONTACTO</span>
+                <a href="https://unime.edu.mx/ms/atencion-a-clientes" target="_blank">Contacto (Información General)</a>
+                <a href="https://unime.edu.mx/ms/unime/MXdWK0Y3LzZtOEhhU1d2TFZ6aW03dz09" target="_blank">UNIME Alexa</a>
+                <a href="https://unime.edu.mx/ms/unime/QkhBUE94clRMb3psK1czZlNFZngvUT09" target="_blank">Mi Correo UNIME</a>
+                <a href="https://unime.edu.mx/ms/unime/R1NwVng0UGdTcFFCSVVQZW02YU5pUT09" target="_blank">UNIME Red</a>
+                <a href="https://unime.edu.mx/ms/unime/RXN1VjF5QU82S3pRZENKNjUzekgwQT09" target="_blank">UNIME Noticias</a>
+                <a href="https://unime.edu.mx/ms/unime/RVpGZTh4SEM3STFQS1RnYTRoQ3RHQT09" target="_blank">UNIME Tv</a>
+                <a href="https://unime.edu.mx/ms/unime/TUxrL1NnNjl2blNkd3VET2dvTmNQQT09" target="_blank">Calendario de Eventos</a>
+                <a href="https://unime.edu.mx/ms/unime/UHFWNzlqOUdtaVprZmFwY1RDQjZsZz09" target="_blank">Aliados UNIME</a>
+                <a href="https://unime.edu.mx/ms/unime/LzRvYk9qTnkvSURSanIzcFVOai8yUT09" target="_blank">Integraciones</a>
+                <a href="https://unime.edu.mx/ms/unime/ZS84ZFhobmVvbDlKRTRkSURPME93QT09" target="_blank">Intercambios</a>
+            </div>
+            <div class="links">
+                <span>INSTALACIONES Y TECNOLOGÍAS</span>
+                <a href="https://unime.edu.mx/ms/unime/Q0xRYnBrMDk2aysyclB5ckFCSFZLUT09" target="_blank">Zona UNIME</a>
+                <a href="https://unime.edu.mx/ms/unime/eDUrQUl4TGpNVEdVcEtESllyK1VuUT09" target="_blank">Cajero Inteligente</a>
+                <a href="https://aula.unime.edu.mx/" target="_blank">Aulas</a>
+                <a href="https://unime.edu.mx/ms/unime/aXdFM3Z6R2dXTlRxTXdmdmtidUh6QT09" target="_blank">Biblioteca</a>
+                <a href="https://unime.edu.mx/ms/unime/U282UHFjY1l1cGY5a3NqU2s0ZnJWdz09" target="_blank">Laboratorios</a>
+                <a href="https://unime.edu.mx/ms/unime/Q3V2S3V6ZWlnOTAxK2xnb2dzbFpudz09" target="_blank">Centro de Convenciones</a>
+                <a href="https://unime.edu.mx/ms/unime/LzBpUnBzQzhEU0JVZVlrMmZ3STNpQT09" target="_blank">Centro de Espectáculos</a>
+                <a href="https://unime.edu.mx/ms/unime/K05GcDMrbUdyWGJueFBjSDAvOFcyUT09" target="_blank">Centro de Exposiciones</a>
+                <a href="https://unime.edu.mx/ms/unime/cHlpQWJHNmVZMkFEUytKNC9nZHBQZz09" target="_blank">Centro Comercial</a>
+                <a href="https://unime.edu.mx/ms/unime/dFBFMTdqbm41ekdUMkdvWjJjWDhlZz09" target="_blank">Zona de Entretenimiento</a>
+            </div>
+            <div class="links">
+                <span>ADMISIONES Y TRÁMITES</span>
+                <a href="https://unime.edu.mx/ms/unime/QWoweHJmbk9tRGV0YTQyd3dOOElOZz09" target="_blank">Inscripciones</a>
+                <a href="https://unime.edu.mx/ms/unime/ZGl4czVlT0FvS2Z6Q2UxRVlCLzFOdz09" target="_blank">Requisitos</a>
+                <a href="https://unime.edu.mx/ms/unime/MzhKMUdXWmtnRDl6b1VDSDVwNXdWZz09" target="_blank">UNIME Kiosco</a>
+                <a href="https://unime.edu.mx/ms/unime/OTdFQ3QvU2x6M2FoRHBLR2pHNEVBZz09" target="_blank">Control Escolar</a>
+                <a href="https://unime.edu.mx/ms/unime/WUhzMHpnT2dFTFJzcFhqeWNhRTFZQT09" target="_blank">Becas</a>
+                <a href="https://unime.edu.mx/ms/unime/eDUrQUl4TGpNVEdVcEtESllyK1VuUT09" target="_blank">Pagos y Facturación</a>
+                <a href="https://unime.edu.mx/ms/atencion-a-clientes" target="_blank">Quejas y Sugerencias</a>
+                <a href="https://unime.edu.mx/mipanel/monederoelectronico" target="_blank">SWi Card</a>
+                <a href="https://unime.edu.mx/solicitarswi" target="_blank">Crear mi SWi</a>
+                <a href="https://unime.edu.mx/convenios-psp-formato-solicitud" target="_blank">Únete al Staff o Equipo Docente</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor">
+            <div class="izq">
+                <figure style="background-image: url('https://cmn-swi.s3.amazonaws.com/Consultora%20Mexicana/Consultora%20Mexicana/DVCUP2/Banco%20de%20Imagenes/dvipro1/Logo%20Unime%20Blanco%28copia%291.png');"></figure>            
+            </div>
+            <div class="centro">
+                <p>
+                    CONTACTO <br>
+                    CCT: 28PSU0199R <br>
+                    En Ciudad Victoria, Tamaulipas, México. <br>
+                    Ave. del Software, Manzana Z, Parque Científico y Tecnológico, C.P. 87138 <br>
+                    <br>
+                    <br>
+                    contacto@unime.edu.mx <br>
+                    <br>
+                    Teléfono: (834) 316-9502 <br>
+                    Telegram:@UNIME_Edu_bot <br>
+                </p>
+            </div>
+            <div class="derecha">
+                <a href="">centro de atención unime</a>
+                <span>Para recibir noticias de la unime:</span>
+                <a href="">registrate aquí</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".preguntas-frecuentes .preguntas .pregunta").on("click", function (event){
+                $(".preguntas-frecuentes .preguntas .respuesta").hide();
+               $(event.currentTarget) .next().fadeIn();
+         });
+        });
+    </script>
+</body>
+</html>
