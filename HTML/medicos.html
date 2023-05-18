@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/a79ca150de.js" crossorigin="anonymous"></script>
     <style>
         body{
             margin: 0;
@@ -163,6 +164,7 @@
         footer {
             background: #2e3868;
             height: 400px;
+            margin-top: 100px;
         }
         section.testimonios {
             height: 300px;
@@ -207,6 +209,132 @@
             border: none;
             padding: 20px;
             border-radius: 30px;
+        }
+        .columna {/* flex-basis: 25%; */flex-shrink: 0;display: flex;flex-direction: column;align-items: start;justify-content: start;padding: 0 10px;flex-grow: 1;max-width: 25%;}
+        footer .contenedor {
+            padding-top: 150px !important;
+        }
+        footer .columna h1 {
+            color: white;
+            margin: 0;
+            font-size: 13pt;
+        }
+        footer .columna ul {
+            list-style: none;
+            color: gray;
+            margin: 0;
+            padding: 0;
+        }
+        footer .columna ul li {
+            padding: 5px 0;
+        }
+        footer .columna p {
+            color: lightgray;
+            font-size: 8pt;
+        }
+        footer ul.iconos {
+            /* background: red; */
+            display: flex;
+            width: 100%;
+        }
+        ul.iconos li {color: gray;background: white;padding: 5px 11px !important;border-radius: 50%;margin: 0px 2px;cursor: pointer;transition: all .45s;}
+        ul.iconos li:hover {
+            background: #1380ed;
+            color: white;
+        }
+        @media only screen and (max-width: 1024px){
+            body{
+                /* background-color: aqua; */
+            }
+            .newsletter .contenedor{
+                width: 700px;
+            }
+        }
+        @media only screen and (max-width: 768px){
+            body{
+                /* background-color:blueviolet; */
+            }
+            .newsletter .contenedor{
+                width: 450px;
+            }
+            .newsletter h1{
+                font-size: 25pt;
+            }
+            .newsletter .grupo input[type="text"]{
+                width: 200px;
+            }
+            header .contenedor{
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+            }
+            header .contenedor > * {
+                margin: 10px 0 !important;
+            }
+            footer{
+                height: inherit;
+            }
+            footer .contenedor{
+
+    flex-direction: column;
+    align-items: center;
+            }
+            footer .columna{
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+            }
+            footer .logo{
+                margin: 0 auto;
+            }
+        }
+        @media only screen and (max-width: 480px){
+            body{
+                /* background-color: rgb(183, 255, 0); */
+            }
+            section.newsletter {
+                position: relative;
+                height: inherit;
+            }
+            .newsletter .contenedor {
+                position: relative;
+                width: 100%;
+                border-radius: 0;
+            }
+            .newsletter h1{
+                text-align: center;
+            }
+            .newsletter p{
+                padding: 0 10px;
+            }
+            .newsletter .grupo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 6px;
+            }
+            .newsletter input{
+                width: inherit;
+                text-align: center;
+            }
+            footer{
+                margin-top: 0;
+            }
+            footer .contenedor{
+                padding-top: 20px !important;
+            }
+        }
+        @media only screen and (max-width: 386px){
+            body{
+                /* background-color: rgb(0, 26, 255); */
+            }
+            .menu li {
+                margin: 5px;
+            }
+            .menu{
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -287,7 +415,45 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="contenedor">
+            <div class="columna">
+                <div class="logo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wikimedia_Espa%C3%B1a_logo_-_vertical_blanco.svg/2560px-Wikimedia_Espa%C3%B1a_logo_-_vertical_blanco.svg.png');"></div>
+                <p>The implicacion is that anger of People The implicacion is that anger of People The implicacion is that anger of People The implicacion is that anger of People</p>
+            </div>
+            <div class="columna">
+                <h1>Department</h1>
+                <ul>
+                    <li>Eye care</li>
+                    <li>Eye care</li>
+                    <li>Eye care</li>
+                    <li>Eye care</li>
+                </ul>
+            </div>
+            <div class="columna">
+                <h1>Useful Links</h1>
+                <ul>
+                    <li>Eye care</li>
+                    <li>Eye care</li>
+                    <li>Eye care</li>
+                    <li>Eye care</li>
+                </ul>
+            </div>
+            <div class="columna">
+                <h1>Services</h1>
+                <ul>
+                    <li>Eye care</li>
+                    <li>Eye care</li>
+                </ul>
+                <ul class="iconos">
+                    <li> <i class="fab fa-facebook-f"></i> </li>
+                    <li> <i class="fab fa-facebook-f"></i> </li>
+                    <li> <i class="fab fa-facebook-f"></i> </li>
+                    <li> <i class="fab fa-facebook-f"></i> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
