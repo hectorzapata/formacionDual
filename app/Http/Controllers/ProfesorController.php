@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use \App\Models\Profesor;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Yajra\Datatables\Datatables;
+use \App\Exports\ProfesoresExport;
 
 class ProfesorController extends Controller{
     public function index($mensaje = false){
@@ -98,5 +99,14 @@ class ProfesorController extends Controller{
         $datatable->setData($data);
         return $datatable;
         // dd($request->all());
+    }
+    public function excel(){
+        // $export = new InvoicesExport([
+        //     [1, 2, 3],
+        //     [4, 5, 6]
+        // ]);
+        // return Excel::download($export, 'invoices.xlsx');
+        return \Excel::download(new ProfesoresExport, 'listadoprofesores.xlsx');
+        // return \Excel::download(new ProfesoresExport, 'listadoprofesores.html', \Maatwebsite\Excel\Excel::HTML);
     }
 }

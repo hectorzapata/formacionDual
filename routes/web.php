@@ -35,6 +35,7 @@ Route::prefix('/profesor')->group(function () {
     Route::delete('/', [ProfesorController::class, 'destroy']);
     Route::get('/{id}/gafete', [ProfesorController::class, 'gafete']);
     Route::get('/tabla', [ProfesorController::class, 'tabla']);
+    Route::get('/excel', [ProfesorController::class, 'excel']);
 })->middleware(['auth', 'verified']);
 
 Route::prefix('/materia')->group(function () {

@@ -13,6 +13,7 @@
             <div class="d-flex align-items-center">
                 <h4 class="mb-0 font-size-18 mr-4">Todos los profesores</h4>
                 <a href="/profesor/create" class="btn btn-primary waves-effect waves-light">Nuevo</a>
+                <a href="/profesor/excel" class="btn btn-success waves-effect waves-light ml-2">Exportar a Excel</a>
             </div>
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
