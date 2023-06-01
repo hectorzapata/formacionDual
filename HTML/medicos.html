@@ -242,17 +242,76 @@
             background: #1380ed;
             color: white;
         }
+        .medicos h1 {
+            text-align: center;
+        }
+        
+        .medico .fotoMedico {
+            background-image: url('https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg');
+            height: 250px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+        }
+        
+        .medico {
+            border: 1px solid #cacaca;
+            padding: 15px;
+            border-radius: 12px;
+            flex-grow: 1;
+            margin: 0 10px;
+            transition: all .45s;
+        }
+        
+        .medicos .titulo {
+            font-weight: 600;
+            margin: 5px 0;
+        }
+        
+        .medicos .subtitulo {
+            margin: 5px 0;
+        }
+        
+        .medicos .contenedor {
+            padding: 0;
+        }
+        
+        .medico:hover {
+            background: #1380ed;
+            color: white;
+            border: none;
+        }
         @media only screen and (max-width: 1024px){
             body{
-                /* background-color: aqua; */
+                background-color: aqua;
             }
             .newsletter .contenedor{
                 width: 700px;
             }
+            .slider .contenedor{
+                padding-top: 0;
+            }
+            .slider .slide{
+                flex-direction: column;
+                height: inherit;
+            }
+            .slider .izq{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .slider .izq a{
+                margin-top: 10px;
+            }
+            .slider .der .circulo{
+                margin-top: 50px;
+                margin-bottom: 15px;
+            }
         }
         @media only screen and (max-width: 768px){
             body{
-                /* background-color:blueviolet; */
+                background-color:blueviolet;
             }
             .newsletter .contenedor{
                 width: 450px;
@@ -275,14 +334,14 @@
                 height: inherit;
             }
             footer .contenedor{
-
-    flex-direction: column;
-    align-items: center;
+                flex-direction: column;
+                align-items: center;
             }
             footer .columna{
-    max-width: 100%;
-    width: 100%;
-    margin: 10px 0;
+                max-width: 90%;
+                width: 100%;
+                margin: 10px 0;
+                padding: 0;
             }
             footer .logo{
                 margin: 0 auto;
@@ -290,7 +349,7 @@
         }
         @media only screen and (max-width: 480px){
             body{
-                /* background-color: rgb(183, 255, 0); */
+                background-color: rgb(183, 255, 0);
             }
             section.newsletter {
                 position: relative;
@@ -324,16 +383,32 @@
             footer .contenedor{
                 padding-top: 20px !important;
             }
+            .slider .izq h1 {
+                font-size: 18pt;
+            }
+            .slider .izq p {
+                font-size: 12pt;
+            }
+            .slider .circulo{
+                height: 200px;
+                width: 200px;
+            }
         }
         @media only screen and (max-width: 386px){
             body{
-                /* background-color: rgb(0, 26, 255); */
+                background-color: rgb(0, 26, 255);
             }
             .menu li {
                 margin: 5px;
             }
             .menu{
                 flex-direction: column;
+            }
+            .slider .der{
+                display: none !important;
+            }
+            .slider .contenedor{
+                padding-bottom: 0;
             }
         }
     </style>
@@ -403,6 +478,31 @@
             <div class="swiper-pagination"></div>
         </div>
         <figure class="lineas"></figure>
+    </section>
+    <section class="medicos">
+        <h1>Our Dedicated Doctors</h1>
+        <div class="contenedor">
+            <div class="medico">
+                <div class="fotoMedico"></div>
+                <div class="titulo">Dr. Mary Joe</div>
+                <div class="subtitulo">Neurology Speciallist</div>
+            </div>
+            <div class="medico">
+                <div class="fotoMedico"></div>
+                <div class="titulo">Dr. Mary Joe</div>
+                <div class="subtitulo">Neurology Speciallist</div>
+            </div>
+            <div class="medico">
+                <div class="fotoMedico"></div>
+                <div class="titulo">Dr. Mary Joe</div>
+                <div class="subtitulo">Neurology Speciallist</div>
+            </div>
+            <div class="medico">
+                <div class="fotoMedico"></div>
+                <div class="titulo">Dr. Mary Joe</div>
+                <div class="subtitulo">Neurology Speciallist</div>
+            </div>
+        </div>
     </section>
     <section class="testimonios"></section>
     <section class="newsletter">

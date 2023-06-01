@@ -36,6 +36,19 @@ Route::prefix('/profesor')->group(function () {
     Route::get('/{id}/gafete', [ProfesorController::class, 'gafete']);
     Route::get('/tabla', [ProfesorController::class, 'tabla']);
     Route::get('/excel', [ProfesorController::class, 'excel']);
+    Route::get('/mapa', function(){
+        return view('mapa')->with('marcadores', [
+            [23.738054845909193, -99.14820728542537],
+            [23.748054845909193, -99.15820728542537],
+            [23.758054845909193, -99.16820728542537],
+            [23.768054845909193, -99.17820728542537],
+            [23.778054845909193, -99.18820728542537],
+            [23.788054845909193, -99.19820728542537],
+            [23.798054845909193, -99.20820728542537],
+            [23.808054845909193, -99.21820728542537],
+        ]);
+    });
+    Route::post('/mapa', [ProfesorController::class, 'mapa']);
 })->middleware(['auth', 'verified']);
 
 Route::prefix('/materia')->group(function () {

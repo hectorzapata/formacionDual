@@ -109,4 +109,7 @@ class ProfesorController extends Controller{
         return \Excel::download(new ProfesoresExport, 'listadoprofesores.xlsx');
         // return \Excel::download(new ProfesoresExport, 'listadoprofesores.html', \Maatwebsite\Excel\Excel::HTML);
     }
+    public function mapa(Request $request){
+        dd($request->all());
+    }
 }
